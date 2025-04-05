@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
-import { Anek_Latin } from "next/font/google";
+import { Anek_Devanagari } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/section/Navbar";
 import Footer from "@/section/Footer";
 import StructuredData from "@/components/SEO/StructuredData";
 
-const anek = Anek_Latin({
-  subsets: ["latin"],
-  variable: "--font-anek",
+// Load Anek Devanagari font which supports both Latin and Devanagari scripts
+const anekDevanagari = Anek_Devanagari({
+  subsets: ['latin', 'devanagari'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
+  variable: '--font-anek',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -54,10 +57,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${anek.variable} font-sans antialiased`}>
+      <body className={`${anekDevanagari.variable} font-sans antialiased`}>
         <StructuredData />
         <Navbar />
-        <div className="pt-16 md:pt-20">
+        <div className="pt-16 ">
           {children}
         </div>
         <Footer />

@@ -5,7 +5,9 @@ export default function OurServices() {
         <section className="w-full py-16 md:py-20 bg-gradient-to-r from-blue-800 to-blue-900 text-white">
             <div className="container max-w-[1400px] mx-auto px-4 md:px-6">
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                        <span className='block text-center text-secondary text-2xl font-stretch-semi-condensed'>We Believe In</span>
+                        Giving Back</h2>
                     <p className="text-xl md:text-2xl max-w-3xl mx-auto">
                         Our greatest satisfaction comes from seeing businesses succeed. That&apos;s why
                         we offer a variety of services to help you unlock your potential.

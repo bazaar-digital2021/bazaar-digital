@@ -13,7 +13,7 @@ export default function Footer() {
                     <div className="space-y-6">
                         <Link href="/" className="inline-block">
                             <Image
-                                src="/bg-logo.png"
+                                src="/footer-logo.png"
                                 alt="Bazaar Digital Logo"
                                 width={160}
                                 height={50}
@@ -71,7 +71,7 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/career" className="text-gray-400 hover:text-white transition-colors">
+                                <Link href="/careers" className="text-gray-400 hover:text-white transition-colors">
                                     Career
                                 </Link>
                             </li>

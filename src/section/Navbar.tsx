@@ -53,10 +53,10 @@ export default function Navbar() {
                             Our Story
                         </Link>
                         <Link
-                            href="/career"
+                            href="/careers"
                             className="text-gray-700 hover:text-blue-800 font-medium"
                         >
-                            Career
+                            Careers
                         </Link>
                         <Link
                             href="/our-clients"

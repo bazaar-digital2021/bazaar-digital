@@ -3,6 +3,7 @@ import Intro from "@/section/Intro"
 import OurServices from "@/section/our-services"
 import OurWork from "@/section/our-work"
 import Testimonial from "@/section/Testimonial"
+import CareerSection from "@/section/CareerSection"
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <OurServices />
       <OurWork />
       <Testimonial />
+      <CareerSection />
     </main>
   )
 }
