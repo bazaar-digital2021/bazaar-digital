@@ -56,7 +56,7 @@ export default function Intro() {
                         custom={0}
                     >
                         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
-                            Bihar&apos;s Leading Digital Marketing Agency
+                            Bihar&apos;s Leading Digital Creative Agency
                         </h1>
                     </motion.div>
 

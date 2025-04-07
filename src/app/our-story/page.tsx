@@ -24,7 +24,7 @@ export default function OurStory() {
             <div className="text-center mb-16 md:mb-24">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#1a237e] mb-6">Our Story</h1>
                 <p className="text-xl md:text-2xl max-w-4xl mx-auto text-gray-700">
-                    From humble beginnings to Bihar&apos;s leading digital marketing agency — our journey of passion, innovation, and growth.
+                    From humble beginnings to Bihar&apos;s leading digital creative agency — our journey of passion, innovation, and growth.
                 </p>
             </div>
 
@@ -36,17 +36,17 @@ export default function OurStory() {
                         <div className="bg-blue-50 p-1 inline-block rounded-lg mb-4">
                             <span className="text-[#1a237e] font-bold py-1 px-3 block">2021</span>
                         </div>
-                        <h2 className="text-3xl font-bold mb-4">The Beginning</h2>
+                        <h2 className="text-3xl font-bold mb-4">The Beginning - Inception of Dreams</h2>
                         <p className="text-gray-700 mb-4">
-                            Bazaar Digital was founded in 2014 with a simple mission: to help local businesses in Bihar establish their digital presence. Starting with just a small team of three passionate digital enthusiasts in a tiny office in Patna, we began offering basic website development and social media management services.
+                            Welcome to the heart of Bazaar Digital , where our journey from a humble beginning to a thriving digital media agency unfolds. It all began in 2021 when our visionaries, Gagan ( Founder & CEO of Bazaar Digital ) , dared to embark on a digital odyssey at a time when the digital landscape was an uncharted territory.
                         </p>
                         <p className="text-gray-700">
-                            Our founder&apos;s vision was clear—to bridge the digital divide and bring world-class marketing solutions to businesses in Bihar that were struggling to adapt to the rapidly evolving digital landscape.
+                            Our founder&apos;s vision was clear—to bridge the digital divide and bring world-class marketing solutions to businesses in Bihar and India that were struggling to adapt to the rapidly evolving digital landscape.
                         </p>
                     </div>
                     <div className="order-1 md:order-2 relative rounded-lg overflow-hidden shadow-xl h-[300px] md:h-[400px]">
                         <Image
-                            src="/office2.jpg"
+                            src="/bd-office-1.JPEG"
                             alt="Bazaar Digital's first office"
                             fill
                             className="object-cover"
@@ -66,17 +66,19 @@ export default function OurStory() {
                     </div>
                     <div>
                         <div className="bg-blue-50 p-1 inline-block rounded-lg mb-4">
-                            <span className="text-[#1a237e] font-bold py-1 px-3 block">2022-2024</span>
+                            <span className="text-[#1a237e] font-bold py-1 px-3 block">2021-2023</span>
                         </div>
-                        <h2 className="text-3xl font-bold mb-4">The Growth Years</h2>
+                        <h2 className="text-3xl font-bold mb-4">A Modest Beginning</h2>
                         <p className="text-gray-700 mb-4">
-                            By 2022, our client base had grown significantly. We expanded our service offerings to include comprehensive digital marketing strategies, SEO, and content marketing. As businesses began to see tangible results from our work, word spread quickly throughout Bihar.
+                            We started our Journey from a small cafe with a purpose to connect brands with their target audience on social media. It was was in this unconventional settings that the seeds of creativity were sown. In the face of challenges, our determination to succeed blossomed
                         </p>
+                        <h3 className='text-xl font-bold my-2 text-primary'>From 1 to 50+ Teammates</h3>
                         <p className="text-gray-700 mb-4">
-                            In 2023, we moved to a larger office space and grew our team to 15 dedicated professionals. This expansion allowed us to take on more clients and begin working with larger businesses across Eastern India.
+                            What started with just Gagan has now grown into a powerhouse of over 50 talented individuals. The journey was not just expanding in numbers but cultivating a family of digital enthusiasts who share a common passion for innovation and excellence.
                         </p>
+                        <h3 className='text-xl font-bold my-2 text-primary'>Embracing the Unknown</h3>
                         <p className="text-gray-700">
-                            By 2024, we had successfully completed over 100 projects and established ourselves as a trusted name in digital marketing within the region.
+                            In 2021 , the digital media landscape was a vast canvas of untapped potential in Bihar. With the backgrounds in Technical and Sales , Gagan dove headfirst into the sea of opportunities. Little did he know , he was destined to redefine the narrative of digital media for brands.
                         </p>
                     </div>
                 </div>
@@ -85,20 +87,24 @@ export default function OurStory() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
                     <div className="order-2 md:order-1">
                         <div className="bg-blue-50 p-1 inline-block rounded-lg mb-4">
-                            <span className="text-[#1a237e] font-bold py-1 px-3 block">2023-2025</span>
+                            <span className="text-[#1a237e] font-bold py-1 px-3 block">Geographical Expansion</span>
                         </div>
-                        <h2 className="text-3xl font-bold mb-4">Recognition & Partnerships</h2>
-                        <p className="text-gray-700 mb-4">
-                            A major milestone came in 2022 when we became an official Google Partner, recognizing our expertise in Google Ads and digital advertising. This certification allowed us to offer more specialized services and gave our clients added confidence in our capabilities.
-                        </p>
 
+                        <p className="text-gray-700 mb-4">
+                            From a small cafe , we’ve transcended boundaries to establish our presence in two key locations- Darbhanga and Patna. Each office is not just a workspace but a hub of creativity and collaboration, echoing the growth and success of Bazaar Digital.
+                        </p>
+                        <h3 className='text-xl font-bold my-2 text-primary'>The Digital Revolution</h3>
                         <p className="text-gray-700">
-                            By 2023, we had expanded our partnerships to include Meta (formerly Facebook), becoming an official Meta Business Partner and further enhancing our social media marketing capabilities.
+                            In a world where digital media was evolving at breakneck speed , we stood as pioneers , shaping the narrative, and steering brands towards digital excellence. What once seemed like an endless array of opportunities has now become a testament to our unwavering commitment and passion.
+                        </p>
+                        <h3 className='text-xl font-bold my-2 text-primary'>Our Promise to You</h3>
+                        <p className="text-gray-700">
+                            As we reflect on our journey, we carry forward the spirit of innovation, resilience, and client-centric Values. At Bazaar Digital , we don’t just navigate the digital landscape; we sculpt it , ensuring that your brand story stands out in a world of endless possibilities.
                         </p>
                     </div>
                     <div className="order-1 md:order-2 relative rounded-lg overflow-hidden shadow-xl h-[300px] md:h-[400px]">
                         <Image
-                            src="/partnership.jpg"
+                            src="/bd-office-3.JPEG"
                             alt="Partnership ceremony"
                             fill
                             className="object-cover"
@@ -110,7 +116,7 @@ export default function OurStory() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
                     <div className="relative rounded-lg overflow-hidden shadow-xl h-[300px] md:h-[400px]">
                         <Image
-                            src="/office3.jpg"
+                            src="/bd-office-2.JPEG"
                             alt="Modern Bazaar Digital office"
                             fill
                             className="object-cover"
@@ -120,7 +126,7 @@ export default function OurStory() {
                         <div className="bg-blue-50 p-1 inline-block rounded-lg mb-4">
                             <span className="text-[#1a237e] font-bold py-1 px-3 block">Today</span>
                         </div>
-                        <h2 className="text-3xl font-bold mb-4">Bihar&apos;s Leading Agency</h2>
+                        <h2 className="text-3xl font-bold mb-4">Bihar&apos;s Creative Agency</h2>
                         <p className="text-gray-700 mb-4">
                             Today, Bazaar Digital stands as Bihar&apos;s leading creative company and digital marketing agency. With a team of over 30 specialists across various digital disciplines, we serve clients ranging from local startups to established regional businesses.
                         </p>
@@ -212,7 +218,7 @@ export default function OurStory() {
                             <h3 className="text-xl font-bold text-[#1a237e]">Gagan Kumar</h3>
                             <p className="text-gray-500 mb-4">Founder & CEO</p>
                             <p className="text-gray-700">
-                                With over 15 years of experience in digital marketing, Rajesh founded Bazaar Digital with a vision to transform how businesses in Bihar approach digital presence.
+                                With over 15 years of experience in digital marketing, Gagan founded Bazaar Digital with a vision to transform how businesses in Bihar approach digital presence.
                             </p>
                         </div>
                     </div>

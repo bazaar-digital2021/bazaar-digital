@@ -83,7 +83,7 @@ export default function CareerSection() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div className="space-y-10">
-                        <motion.div
+                        {/* <motion.div
                             variants={logoVariants}
                             initial="hidden"
                             animate={controls}
@@ -93,7 +93,7 @@ export default function CareerSection() {
                                 <span className="bg-primary text-white px-2 py-1 font-bold">Bazaar</span>
                                 <span className="px-2 text-gray-800 font-medium">digital</span>
                             </div>
-                        </motion.div>
+                        </motion.div> */}
 
                         <div className="space-y-6">
                             <div className="space-y-3">
