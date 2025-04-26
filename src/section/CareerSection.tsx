@@ -98,7 +98,7 @@ export default function CareerSection() {
                         <div className="space-y-6">
                             <div className="space-y-3">
                                 <motion.h2
-                                    className="text-4xl md:text-5xl font-bold text-gray-900"
+                                    className="text-4xl md:text-5xl font-bold text-black/80"
                                     variants={textVariants}
                                     initial="hidden"
                                     animate={controls}
@@ -109,21 +109,21 @@ export default function CareerSection() {
                                         variants={highlightVariants}
                                         initial="hidden"
                                         animate={controls}
-                                    >results</motion.span>
+                                    >Results</motion.span>
                                 </motion.h2>
                                 <motion.h2
-                                    className="text-4xl md:text-5xl font-bold text-gray-900"
+                                    className="text-4xl md:text-5xl font-bold text-black/80"
                                     variants={textVariants}
                                     initial="hidden"
                                     animate={controls}
                                     custom={1}
                                 >
-                                    require outstanding <motion.span
-                                        className="text-secondary"
+                                    require Outstanding <motion.span
+                                        className="text-primary"
                                         variants={highlightVariants}
                                         initial="hidden"
                                         animate={controls}
-                                    >people.</motion.span>
+                                    >People.</motion.span>
                                 </motion.h2>
                             </div>
 
@@ -154,28 +154,10 @@ export default function CareerSection() {
                                 animate={controls}
                                 custom={4}
                             >
-                                <span className="text-2xl font-semibold text-gray-900">Then you'll</span>
+                                <span className="text-2xl font-semibold text-black/80">Then you'll</span>
                                 <span className="text-2xl font-semibold text-primary mx-2">fit right</span>
-                                <span className="text-2xl font-semibold text-gray-900">in with us!</span>
-                                <motion.svg
-                                    className="w-8 h-8 ml-2 text-orange-500"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    viewBox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    animate={{
-                                        x: [0, 10, 0],
-                                        transition: {
-                                            duration: 1.5,
-                                            repeat: Infinity,
-                                            repeatType: "loop",
-                                            ease: "easeInOut",
-                                            repeatDelay: 1
-                                        }
-                                    }}
-                                >
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </motion.svg>
+                                <span className="text-2xl font-semibold text-black/80">in with us!</span>
+
                             </motion.div>
                         </div>
                     </div>
@@ -189,22 +171,22 @@ export default function CareerSection() {
                             custom={2}
                         >
                             <div className="space-y-4">
-                                <h3 className="text-2xl font-bold text-gray-900">Bazaar Digital is a 100% On-Site workplace with industry-leading benefits.</h3>
+                                <h3 className="text-2xl font-bold text-black/80">Bazaar Digital is a 100% On-Site workplace with industry-leading benefits.</h3>
                                 <p className="text-gray-700">We put work-life balance first, so our team members are always on top of their game.</p>
                             </div>
 
                             <div className="space-y-4">
-                                <h3 className="text-2xl font-bold text-gray-900">Are you ready for a game-changing career move?</h3>
+                                <h3 className="text-2xl font-bold text-black/80">Are you ready for a game-changing career move?</h3>
 
                                 <motion.div
                                     variants={buttonVariants}
                                     initial="hidden"
                                     animate={controls}
-                                    whileHover="hover"
+
                                     whileTap="tap"
                                     className="inline-block"
                                 >
-                                    <Link href="/careers" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md uppercase tracking-wide inline-block">
+                                    <Link href="/careers" className="bg-primary  text-white font-bold py-3 px-6  uppercase tracking-wide inline-block rounded-full pt-4">
                                         Explore Opportunities
                                     </Link>
                                 </motion.div>

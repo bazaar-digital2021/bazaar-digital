@@ -7,10 +7,14 @@ import React from 'react'
 
 const Testimonial = () => {
     return (
-        <section className="w-full py-10 md:py-20 md:pt-16 bg-muted/50" id='clients'>
+        <section className="w-full py-10 md:py-10  bg-muted/50" id='clients'>
             <div className="container mx-auto px-4 md:px-6">
-                <h2 className="md:text-4xl font-bold text-center mb-8 text-primary">
-                    Listen From Our Clients
+                <h2 className="md:text-6xl uppercase font-medium text-center mb-8 text-black/70">
+                    Listen From
+                    <span className='font-bold ml-2 text-primary'>
+                        Our Clients
+                    </span>
+
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                     {testimonial.map((testimonial, index) => (

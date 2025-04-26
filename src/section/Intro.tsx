@@ -57,8 +57,8 @@ export default function Intro() {
                     variants={fadeIn}
                     custom={0}
                 >
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center">
-                        Your Trusted <span className='text-primary'>Google & Meta Partner</span>
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-black/80 uppercase">
+                        Your Trusted <span className='text-primary '>Google & Meta Partner</span>
                     </h1>
                 </motion.div>
                 <div className='flex gap-5 md:gap-8 flex-col md:flex-row justify-between items-start mb-5 md:mb-10'>
@@ -139,16 +139,16 @@ export default function Intro() {
                                     animate={isVisible ? "visible" : "hidden"}
                                 >
                                     <motion.h3
-                                        className="text-3xl sm:text-4xl font-medium"
+                                        className="text-3xl sm:text-[42px] font-medium text-black/80"
                                         variants={fadeIn}
                                         custom={4}
                                     >
                                         Helping Clients Build<motion.span
-                                            className="block  text-black font-medium"
+                                            className="block  text-black/80 font-medium text-[38px]"
 
                                         > Digital Media Presence </motion.span>
                                         <motion.span
-                                            className="text-primary md:text-[80px] block mt-1 font-bold"
+                                            className="text-primary md:text-[77px] block mt-1 font-bold uppercase"
 
                                         >Since 2021</motion.span>
                                     </motion.h3>
@@ -241,11 +241,11 @@ export default function Intro() {
                         </div>
                         {/* ABOUT US IMAGES */}
                         <div className='grid grid-cols-2 gap-4 mt-4 md:mt-12'>
-                            <div className='relative rounded-md overflow-hidden'>
-                                <Image src="/design.png" alt="About Us" width={500} height={500} />
+                            <div className='relative rounded-2xl overflow-hidden'>
+                                <Image src="/bd-office-1.JPEG" alt="About Us" width={500} height={500} className='rounded-2xl' />
                             </div>
-                            <div className='relative rounded-md overflow-hidden'>
-                                <Image src="/bd-office-1.JPEG" alt="About Us" width={500} height={500} />
+                            <div className='relative rounded-2xl overflow-hidden mt-10'>
+                                <Image src="/design.png" alt="About Us" width={500} height={500} />
                             </div>
                         </div>
 

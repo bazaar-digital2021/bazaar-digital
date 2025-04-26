@@ -27,14 +27,14 @@ export default function OurWork() {
                     className='space-y-12'>
 
                     <h1 className='text-center md:text-left font-bold text-3xl sm:text-4xl md:text-5xl bg-clip-text text-transparent '>
-                        <span className='text-black font-medium'>
+                        <span className='text-black/80 font-medium'>
                             Why Bazaar Digital is
                         </span>
                         <span className='block text-primary uppercase font-bold text-7xl'>
 
                             First choice
                         </span>
-                        <span className='text-black text-[39px] block font-medium -mt-3'>
+                        <span className='text-black/80 text-[39px] block font-medium -mt-3'>
                             For your Business Growth
                         </span>
                     </h1>
@@ -60,7 +60,7 @@ export default function OurWork() {
                     {AboutUsCards.map((card, index) => (
                         <Card key={index} className='mb-4'>
                             <CardHeader>
-                                <CardTitle className='flex items-center gap-4 text-xl'>
+                                <CardTitle className='flex items-center gap-4 text-xl text-black/80'>
                                     <div className='bg-primary p-3 rounded-xl w-max'>
                                         <card.icon className='h-6 w-6 text-white' />
                                     </div>
