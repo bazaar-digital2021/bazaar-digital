@@ -25,14 +25,30 @@ export default function OurWork() {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.3, ease: "easeOut", }}
                     className='space-y-12'>
-                    <p className='text-pink-600 font-bold font-mono text-xl text-center'>Our Achievements </p>
-                    <h1 className='text-center md:text-left font-bold text-3xl sm:text-4xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-[#1a237e] via-blue-600 to-[#48C89C]'>
-                        Why Bazaar Digital is First choice for your Business Growth ?
+
+                    <h1 className='text-center md:text-left font-bold text-3xl sm:text-4xl md:text-5xl bg-clip-text text-transparent '>
+                        <span className='text-black font-medium'>
+                            Why Bazaar Digital is
+                        </span>
+                        <span className='block text-primary uppercase font-bold text-7xl'>
+
+                            First choice
+                        </span>
+                        <span className='text-black text-[39px] block font-medium -mt-3'>
+                            For your Business Growth
+                        </span>
                     </h1>
                     <p className='text-muted-foreground text-center md:text-left'> Bazaar Digital is the first choice for your business growth because we offer state-of-the-art AI-powered websites, scalable and cost-effective social media marketing, expert SEO consultancy, and tailored digital solutions that drive engagement and measurable results—all with a focus on innovation and efficiency.</p>
-                    <Button className='bg-secondary/60 border-transparent  border-b-4 border-b-secondary/80 hover:border-b-secondary rounded-full hover:bg-secondary/60 hover:border-b-2 flex items-center gap-4 hover:gap-2 transition-all duration-500 ease-in-out shadow-sm' size='lg'>
-                        <span className=' text-black'>See Our Works</span>
-                        <ArrowRight className=" h-4 w-4" />
+                    <Button
+                        className=" bg-primary text-xl text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-all  gap-2 "
+                        size='lg'
+
+                    >
+                        <span className='inline-block pt-2 items-center gap-2'>
+
+                            See Our Works
+                        </span>
+                        <ArrowRight className='w-8 h-8 ml-2' />
                     </Button>
                 </motion.div>
 
@@ -45,7 +61,7 @@ export default function OurWork() {
                         <Card key={index} className='mb-4'>
                             <CardHeader>
                                 <CardTitle className='flex items-center gap-4 text-xl'>
-                                    <div className='bg-[#48C89C] p-3 rounded-xl w-max'>
+                                    <div className='bg-primary p-3 rounded-xl w-max'>
                                         <card.icon className='h-6 w-6 text-white' />
                                     </div>
                                     {card.title}
