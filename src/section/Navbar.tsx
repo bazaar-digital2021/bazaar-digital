@@ -114,6 +114,12 @@ export default function Navbar() {
                                     </NavigationMenuItem>
                                 </NavigationMenuList>
                             </NavigationMenu>
+                            <Link
+                                href="#"
+                                className="text-gray-700 hover:text-blue-800 font-medium"
+                            >
+                                Plan & Pricing
+                            </Link>
                             <Button
 
                                 className=" text-white hover:text-white/80 rounded-full px-4 pt-3"
@@ -160,13 +166,13 @@ export default function Navbar() {
                         >
                             Career
                         </Link>
-                        {/* <Link
-                            href="/our-clients"
+                        <Link
+                            href="#"
                             className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100"
                             onClick={() => setIsMenuOpen(false)}
                         >
-                            Our Clients
-                        </Link> */}
+                            Plan & Pricing
+                        </Link>
                         <NavigationMenu>
                             <NavigationMenuList>
                                 <NavigationMenuItem>
