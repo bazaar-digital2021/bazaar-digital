@@ -21,7 +21,7 @@ export default function Hero() {
             {/* Background SVG Pattern */}
 
             <div className="max-w-[1400px] mx-auto relative z-10">
-                <div className="flex flex-col md:flex-row md:items-center justify-between md:gap-8">
+                <div className="flex flex-col items-start md:flex-row md:items-center justify-between md:gap-8">
                     {/* Left Section */}
                     <div className="absolute inset-0 z-0 pointer-events-none overflow-visible">
                         <Image
@@ -47,9 +47,9 @@ export default function Hero() {
                     >
                         {/* Main Content */}
                         <div className="space-y-4">
-                            <div className="space-y-28">
+                            <div className="space-y-12 md:space-y-28">
                                 <motion.h1
-                                    className="text-xl md:text-2xl font-normal text-hindi text-center text-primary ml-6"
+                                    className="text-xl md:text-2xl font-normal text-hindi text-start md:text-center text-primary ml-6"
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={isLoaded ? { opacity: 1, y: 0 } : {}}
                                     transition={{ duration: 0.5, delay: 0.3 }}
@@ -82,7 +82,7 @@ export default function Hero() {
                                 stiffness: 100
                             }}
                         >
-                            <span className="relative inline-block font-extrabold">
+                            <span className="relative block text-center md:text-start font-extrabold">
                                 #ZaruriHai
                                 {/* <motion.span
                                             className="absolute -top-3 -right-3 h-6 w-6 rounded-full bg-yellow-400"
@@ -137,7 +137,7 @@ export default function Hero() {
 
                                 {/* Circular container for the image */}
                                 <motion.div
-                                    className='relative top-12 h-[350px] w-[350px] md:h-[450px] md:w-[550px] lg:h-[550px] lg:w-[500px]'
+                                    className='relative left-6 md:left-0 top-12 h-[350px] w-[350px] md:h-[450px] md:w-[550px] lg:h-[550px] lg:w-[500px] -mt-12 md:mt-0'
                                     initial={{ scale: 0.8, opacity: 0 }}
                                     animate={isLoaded ? { scale: 1, opacity: 1 } : {}}
                                     transition={{ duration: 0.8, delay: 0.4 }}
