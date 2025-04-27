@@ -21,12 +21,9 @@ export default function StructuredData() {
             ],
             '/contact': [
                 { name: 'Home', url: '/' },
-                { name: 'Contact', url: '/contact' }
+                { name: 'Contact', url: '/contact-us' }
             ],
-            '/blog': [
-                { name: 'Home', url: '/' },
-                { name: 'Blog', url: '/blog' }
-            ]
+
         }
 
         return breadcrumbs[pathname as keyof typeof breadcrumbs] || null

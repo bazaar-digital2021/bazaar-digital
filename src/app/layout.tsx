@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/section/Navbar";
 import Footer from "@/section/Footer";
 import StructuredData from "@/components/SEO/StructuredData";
+import Providers from "@/components/progress-provider";
 
 // Load Anek Devanagari font which supports both Latin and Devanagari scripts
 const anekDevanagari = Anek_Devanagari({
@@ -58,12 +59,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${anekDevanagari.variable} font-sans antialiased`}>
-        <StructuredData />
-        <Navbar />
-        <div className="pt-16 ">
-          {children}
-        </div>
-        <Footer />
+        <Providers>
+          <StructuredData />
+          <Navbar />
+          <div >
+            {children}
+          </div>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

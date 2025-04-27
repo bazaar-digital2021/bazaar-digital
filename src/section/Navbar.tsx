@@ -1,28 +1,48 @@
-'use client'
-import Image from 'next/image'
-import Link from 'next/link'
-import { useState } from 'react'
-import { Button } from '@/components/ui/button'
+"use client"
 
-import {
-    NavigationMenu,
-    NavigationMenuContent,
-    NavigationMenuIndicator,
-    NavigationMenuItem,
-    NavigationMenuLink,
-    NavigationMenuList,
-    NavigationMenuTrigger,
-    NavigationMenuViewport,
-} from "@/components/ui/navigation-menu"
+import Link from "next/link"
+import Image from "next/image"
+import { useState, useEffect } from "react"
+import { motion, AnimatePresence } from "framer-motion"
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Button } from "@/components/ui/button"
+
+
+
+import { Menu, X } from "lucide-react"
+import { DesktopNav } from "@/components/desktop-nav"
+import { MobileNav } from "@/components/mobile-nav"
+import { useRouter } from "@bprogress/next/app"
+import { navigation } from "@/lib/navigation"
 
 export default function Navbar() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const [open, setOpen] = useState(false)
+    const [isScrolled, setIsScrolled] = useState(false)
+    const router = useRouter()
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollPosition = window.scrollY
+            if (scrollPosition > 10) {
+                setIsScrolled(true)
+            } else {
+                setIsScrolled(false)
+            }
+        }
+
+        window.addEventListener("scroll", handleScroll)
+        return () => window.removeEventListener("scroll", handleScroll)
+    }, [])
 
     return (
-        <header className={`fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-gray-200 transition-shadow duration-300 `}>
-            <div className="max-w-[1400px] mx-auto px-4 md:px-8">
-                <div className="flex items-center justify-between h-16 md:h-16">
-                    {/* Logo (Left) */}
+        <header
+            className={`sticky top-0 z-50 w-full transition-all duration-300 ${isScrolled
+                ? "bg-white/90 backdrop-blur-md shadow-lg"
+                : "bg-white "
+                }`}
+        >
+            <div className="max-w-7xl mx-auto flex h-20 items-center justify-between px-4 lg:px-8">
+                <div className="flex w-full items-center justify-between gap-8">
                     <div className="flex-shrink-0">
                         <Link href="/">
                             <Image
@@ -35,183 +55,45 @@ export default function Navbar() {
                         </Link>
                     </div>
 
-                    {/* Mobile menu button */}
-                    <div className="flex ml-auto md:hidden">
-                        <button
-                            type="button"
-                            className="inline-flex items-center justify-center p-2 rounded-md text-gray-700"
-                            onClick={() => setIsMenuOpen(!isMenuOpen)}
+                    {/* Desktop Navigation */}
+                    <nav className="hidden md:flex flex-1 justify-end">
+                        <DesktopNav items={navigation} />
+                        <Button
+                            className=" text-white hover:text-white/80 rounded-full px-4 pt-3 mb-2 ml-2"
+                            asChild
                         >
-                            <span className="sr-only">Open main menu</span>
-                            {isMenuOpen ? (
-                                <svg className="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                                </svg>
-                            ) : (
-                                <svg className="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                                </svg>
-                            )}
-                        </button>
-                    </div>
-
-                    {/* Navigation Links (Middle) - Desktop */}
-                    {/* <nav className="hidden md:flex items-center justify-center space-x-8 flex-1 mx-10">
-                        <Link
-                            href="/our-story"
-                            className="text-gray-700 hover:text-blue-800 font-medium"
-                        >
-                            Our Story
-                        </Link>
-                        <Link
-                            href="/careers"
-                            className="text-gray-700 hover:text-blue-800 font-medium"
-                        >
-                            Careers
-                        </Link>
-                        <Link
-                            href="/our-clients"
-                            className="text-gray-700 hover:text-blue-800 font-medium"
-                        >
-                            Our Clients
-                        </Link>
-                    </nav> */}
-                    <div>
-
-                    </div>
-
-                    {/* Contact Button (Right) - Desktop */}
-                    <div className="hidden md:block">
-                        <nav className="hidden md:flex items-center justify-center space-x-8 flex-1 mx-10">
-                            <Link
-                                href="/our-story"
-                                className="text-gray-700 hover:text-blue-800 font-medium"
-                            >
-                                Our Story
+                            <Link href="tel:+918210546110">
+                                Book a Call
                             </Link>
-                            {/* <Link
-                                href="/careers"
-                                className="text-gray-700 hover:text-blue-800 font-medium"
-                            >
-                                Careers
-                            </Link> */}
-                            <NavigationMenu>
-                                <NavigationMenuList className='border-none'>
-                                    <NavigationMenuItem className='border-none'>
-                                        <NavigationMenuTrigger className='bg-transparent hover:bg-transparent border-none'>Our Services</NavigationMenuTrigger>
-                                        <NavigationMenuContent className='!w-[200px] border-none shadow-lg focus:outline-none focus:ring-0'>
-                                            <NavigationMenuLink>
-                                                Development
-                                            </NavigationMenuLink>
-                                            <NavigationMenuLink>
-                                                Design
-                                            </NavigationMenuLink>
-                                            <NavigationMenuLink>
+                        </Button>
+                    </nav>
 
-                                            </NavigationMenuLink>
-                                            <NavigationMenuLink>Link</NavigationMenuLink>
-                                        </NavigationMenuContent>
-                                    </NavigationMenuItem>
-                                </NavigationMenuList>
-                            </NavigationMenu>
-                            <Link
-                                href="#"
-                                className="text-gray-700 hover:text-blue-800 font-medium"
-                            >
-                                Plan & Pricing
-                            </Link>
-                            <Link
-                                href="/contact-us"
-                                className="text-gray-700 hover:text-blue-800 font-medium"
-                            >
-                                Contact Us
-                            </Link>
-                            <Button
-                                className=" text-white hover:text-white/80 rounded-full px-4 pt-3"
-                                asChild
-                            >
-                                <Link href="tel:+918210546110">
-                                    Book a Call
-                                </Link>
-                            </Button>
-                        </nav>
-                    </div>
                 </div>
-            </div>
 
-            {/* Mobile Navigation Menu */}
-            {isMenuOpen && (
-                <div className="md:hidden bg-white shadow-lg border-t border-gray-200">
-                    <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                        <Link
-                            href="/about-us"
-                            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100"
-                            onClick={() => setIsMenuOpen(false)}
+
+
+                {/* Mobile Navigation */}
+                <Sheet open={open} onOpenChange={setOpen}>
+                    <SheetTrigger asChild className="md:hidden">
+                        <Button
+                            variant="ghost"
+                            size="icon"
+                            className="h-10 w-10 hover:bg-primary/10 transition-colors"
+                            aria-label="Toggle Menu"
                         >
-                            About Us
-                        </Link>
-                        {/* <Link
-                            href="/career"
-                            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            Career
+                            <Menu className="h-6 w-6" />
+                        </Button>
+                    </SheetTrigger>
+                    <SheetContent side="right" className="w-[85%] max-w-sm p-0 border-l shadow-lg">
+                        {/* <Link href="/" className="flex items-cente z-10 pt-4">
+                            <div className="relative h-24 md:h-64 w-48 sm:w-64">
+                                <Image src="/vi-logo.png" alt="VAIDEHI INSTITUTE" fill className="object-contain" />
+                            </div>
                         </Link> */}
-                        <Link
-                            href="#"
-                            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            Plan & Pricing
-                        </Link>
-                        <NavigationMenu>
-                            <NavigationMenuList>
-                                <NavigationMenuItem>
-                                    <NavigationMenuTrigger>Our Services</NavigationMenuTrigger>
-                                    <NavigationMenuContent>
-                                        <NavigationMenuLink>Link</NavigationMenuLink>
-                                        <NavigationMenuLink>Link</NavigationMenuLink>
-                                        <NavigationMenuLink>Link</NavigationMenuLink>
-                                        <NavigationMenuLink>Link</NavigationMenuLink>
-                                    </NavigationMenuContent>
-                                </NavigationMenuItem>
-                            </NavigationMenuList>
-                        </NavigationMenu>
-                        <div className="px-3 py-2">
-                            <Button
-                                variant="outline"
-                                className="w-full text-blue-800 border-blue-800 hover:bg-blue-800 hover:text-white"
-                                asChild
-                            >
-                                <Link href="tel:+918210546110">
-                                    <svg
-                                        className="w-4 h-4 mr-2"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        viewBox="0 0 24 24"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth={2}
-                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                                        />
-                                    </svg>
-                                    +91 8210546110
-                                </Link>
-                            </Button>
-                        </div>
-                        <Link
-                            href="/contact-us"
-                            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            Contact Us
-                        </Link>
-                    </div>
-                </div>
-            )}
+                        <MobileNav items={navigation} setOpen={setOpen} />
+                    </SheetContent>
+                </Sheet>
+            </div>
         </header>
     )
 } 
