@@ -21,97 +21,97 @@ export const navigation: Navigation = [
                 "items": [
                     {
                         "title": "Wordpress Development",
-                        "href": "/services/development/wordpress-development"
+                        "href": "/plan-and-pricing/web-services-plan-and-pricing"
                     },
                     {
                         "title": "Shopify Web Development",
-                        "href": "/services/development/shopify-web-development"
+                        "href": "/plan-and-pricing/web-services-plan-and-pricing"
                     },
                     {
                         "title": "Custom Web Development",
-                        "href": "/services/development/custom-web-development"
+                        "href": "/plan-and-pricing/web-services-plan-and-pricing"
                     },
                     {
                         "title": "Software Development",
-                        "href": "/services/development/software-development"
+                        "href": "/plan-and-pricing/web-services-plan-and-pricing"
                     },
                     {
                         "title": "App Development",
-                        "href": "/services/development/app-development"
+                        "href": "/plan-and-pricing/web-services-plan-and-pricing"
                     },
                     {
                         "title": "CRM Development",
-                        "href": "/services/development/crm-development"
+                        "href": "/plan-and-pricing/web-services-plan-and-pricing"
                     }
                 ]
             },
-            {
-                "title": "Search Engine Optimisation",
-                "items": [
-                    {
-                        "title": "Technical SEO",
-                        "href": "/services/seo/technical-seo"
-                    },
-                    {
-                        "title": "Local SEO",
-                        "href": "/services/seo/local-seo"
-                    },
-                    {
-                        "title": "International SEO",
-                        "href": "/services/seo/international-seo"
-                    },
-                    {
-                        "title": "Franchise SEO",
-                        "href": "/services/seo/franchise-seo"
-                    },
-                    {
-                        "title": "Youtube SEO",
-                        "href": "/services/seo/youtube-seo"
-                    }
-                ]
-            },
+            // {
+            //     "title": "Search Engine Optimisation",
+            //     "items": [
+            //         {
+            //             "title": "Technical SEO",
+            //             "href": "/services/seo/technical-seo"
+            //         },
+            //         {
+            //             "title": "Local SEO",
+            //             "href": "/services/seo/local-seo"
+            //         },
+            //         {
+            //             "title": "International SEO",
+            //             "href": "/services/seo/international-seo"
+            //         },
+            //         {
+            //             "title": "Franchise SEO",
+            //             "href": "/services/seo/franchise-seo"
+            //         },
+            //         {
+            //             "title": "Youtube SEO",
+            //             "href": "/services/seo/youtube-seo"
+            //         }
+            //     ]
+            // },
             {
                 "title": "Digital Marketing",
                 "items": [
                     {
                         "title": "Social Media Marketing",
-                        "href": "/services/digtital-marketing/social-media-marketing"
+                        "href": "/plan-and-pricing/digital-media-marketing-plan-and-pricing"
                     },
                     {
                         "title": "Influencer Marketing",
-                        "href": "/services/digtital-marketing/influencer-marketing"
+                        "href": "/plan-and-pricing/digital-media-marketing-plan-and-pricing"
                     },
                     {
                         "title": "Content Marketing",
-                        "href": "/services/digtital-marketing/content-marketing"
+                        "href": "/plan-and-pricing/digital-media-marketing-plan-and-pricing"
                     },
                     {
                         "title": "Public Relations (PR)",
-                        "href": "/services/digtital-marketing/public-relations"
+                        "href": "/plan-and-pricing/digital-media-marketing-plan-and-pricing"
                     },
                     {
                         "title": "Neuro Marketing",
-                        "href": "/services/digtital-marketing/neuro-marketing"
+                        "href": "/plan-and-pricing/digital-media-marketing-plan-and-pricing"
                     },
                     {
                         "title": "Diversity Marketing",
-                        "href": "/services/digtital-marketing/diversity-marketing"
+                        "href": "/plan-and-pricing/digital-media-marketing-plan-and-pricing"
                     },
                     {
                         "title": "Email Marketing",
-                        "href": "/services/digtital-marketing/email-marketing"
+                        "href": "/plan-and-pricing/digital-media-marketing-plan-and-pricing"
                     },
                     {
                         "title": "Online Reputation Management (ORM)",
-                        "href": "/services/digtital-marketing/online-reputation-management"
+                        "href": "/plan-and-pricing/digital-media-marketing-plan-and-pricing"
                     },
                     {
                         "title": "B2C Marketing",
-                        "href": "/services/digtital-marketing/b2c-marketing"
+                        "href": "/plan-and-pricing/digital-media-marketing-plan-and-pricing"
                     },
                     {
                         "title": "Whatsapp Marketing",
-                        "href": "/services/digtital-marketing/whatsapp-marketing"
+                        "href": "/plan-and-pricing/digital-media-marketing-plan-and-pricing"
                     }
                 ]
             }
@@ -126,7 +126,7 @@ export const navigation: Navigation = [
             },
             {
                 title: 'Digital Marketing Plan & Pricing',
-                href: '/plan-and-pricing/social-media-marketing-plan-and-pricing'
+                href: '/plan-and-pricing/digital-media-marketing-plan-and-pricing'
             },
             {
                 title: 'Web Services Plan & Pricing',
