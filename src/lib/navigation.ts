@@ -21,55 +21,38 @@ export const navigation: Navigation = [
                 "items": [
                     {
                         "title": "Wordpress Development",
-                        "href": "/plan-and-pricing/web-services-plan-and-pricing"
+                        "href": "/services/web-services#wordpress-development"
                     },
                     {
                         "title": "Shopify Web Development",
-                        "href": "/plan-and-pricing/web-services-plan-and-pricing"
+                        "href": "/services/web-services#shopify-development"
                     },
                     {
                         "title": "Custom Web Development",
-                        "href": "/plan-and-pricing/web-services-plan-and-pricing"
+                        "href": "/services/web-services#custom-web-development"
                     },
                     {
                         "title": "Software Development",
-                        "href": "/plan-and-pricing/web-services-plan-and-pricing"
+                        "href": "/services/web-services#software-development"
                     },
                     {
                         "title": "App Development",
-                        "href": "/plan-and-pricing/web-services-plan-and-pricing"
+                        "href": "/services/web-services#app-development"
                     },
                     {
                         "title": "CRM Development",
-                        "href": "/plan-and-pricing/web-services-plan-and-pricing"
-                    }
+                        "href": "/services/web-services#crm-development"
+                    },
+                    {
+                        "title": "Technical SEO",
+                        "href": "/services/web-services#technical-seo"
+                    },
+                    {
+                        "title": "Local SEO",
+                        "href": "/services/web-services#local-seo"
+                    },
                 ]
             },
-            // {
-            //     "title": "Search Engine Optimisation",
-            //     "items": [
-            //         {
-            //             "title": "Technical SEO",
-            //             "href": "/services/seo/technical-seo"
-            //         },
-            //         {
-            //             "title": "Local SEO",
-            //             "href": "/services/seo/local-seo"
-            //         },
-            //         {
-            //             "title": "International SEO",
-            //             "href": "/services/seo/international-seo"
-            //         },
-            //         {
-            //             "title": "Franchise SEO",
-            //             "href": "/services/seo/franchise-seo"
-            //         },
-            //         {
-            //             "title": "Youtube SEO",
-            //             "href": "/services/seo/youtube-seo"
-            //         }
-            //     ]
-            // },
             {
                 "title": "Digital Marketing",
                 "items": [
@@ -114,7 +97,58 @@ export const navigation: Navigation = [
                         "href": "/plan-and-pricing/digital-media-marketing-plan-and-pricing"
                     }
                 ]
+            },
+            {
+                "title": "PPC/Paid Marketing",
+                "items": [
+                    {
+                        "title": "Facebook & Instagram Ads",
+                        "href": "/services/ppc/facebook-instagram-ads"
+                    },
+                    {
+                        "title": "Google Ads",
+                        "href": "/services/ppc/google-ads"
+                    },
+                    {
+                        "title": "Youtube Ads",
+                        "href": "/services/ppc/youtube-ads"
+                    },
+                    {
+                        "title": "Marketplace Ads",
+                        "href": "/services/ppc/marketplace-ads"
+                    },
+                    {
+                        "title": "LinkedIn Ads",
+                        "href": "/services/ppc/linkedin-ads"
+                    }
+                ]
+            },
+            {
+                "title": "Designing",
+                "items": [
+                    {
+                        "title": "Label & Package Designing",
+                        "href": "/services/designing/label-package"
+                    },
+                    {
+                        "title": "Flyers & Billboard Banners Designing",
+                        "href": "/services/designing/flyers-billboards"
+                    },
+                    {
+                        "title": "Presentation/Brochure Designing",
+                        "href": "/services/designing/presentation-brochure"
+                    },
+                    {
+                        "title": "Video Creation/Editing",
+                        "href": "/services/designing/video-editing"
+                    },
+                    {
+                        "title": "UI/UX Designing",
+                        "href": "/services/designing/ui-ux"
+                    }
+                ]
             }
+
         ]
     },
     {

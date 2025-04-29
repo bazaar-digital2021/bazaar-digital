@@ -259,13 +259,13 @@ const professionalVideoPlans: Plan[] = [
 
 const PlanCard = ({ plan }: { plan: Plan }) => (
     <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md">
-        <h3 className={`text-2xl font-bold mb-3 ${plan.color}`}>{plan.name}</h3>
+        <h3 className={`text-2xl font-bold mb-3 text-primary`}>{plan.name}</h3>
 
         <p className="text-3xl font-bold mb-6">{plan.price}</p>
 
         <Link
             href={`/checkout/${plan.id}`}
-            className={`${plan.buttonColor} text-white py-3 px-8 rounded-md text-lg font-semibold mb-6 transition-colors duration-300`}
+            className={`bg-secondary text-white py-3 px-8 rounded-md text-lg font-semibold mb-6 transition-colors duration-300`}
         >
             Buy Now
         </Link>
@@ -290,7 +290,7 @@ const ProductShootCard = ({ plan }: { plan: ProductShootPlan }) => (
 
             <Link
                 href={`/checkout/${plan.id}`}
-                className={`${plan.buttonColor} text-white py-3 px-12 rounded-md text-lg font-semibold transition-colors duration-300 inline-block`}
+                className={`bg-secondary text-white py-3 px-12 rounded-md text-lg font-semibold transition-colors duration-300 inline-block`}
             >
                 Buy Now
             </Link>
@@ -305,11 +305,11 @@ const ProductShootCard = ({ plan }: { plan: ProductShootPlan }) => (
 // Extended PlanCard for outdoor model plans to show description
 const OutdoorPlanCard = ({ plan }: { plan: Plan }) => (
     <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md">
-        <h3 className={`text-2xl font-bold mb-3 ${plan.color}`}>{plan.name}</h3>
+        <h3 className={`text-2xl font-bold mb-3 text-primary`}>{plan.name}</h3>
         <p className="text-3xl font-bold mb-6">{plan.price}</p>
         <Link
             href={`/checkout/${plan.id}`}
-            className={`${plan.buttonColor} text-white py-3 px-8 rounded-md text-lg font-semibold mb-6 transition-colors duration-300`}
+            className={`bg-secondary text-white py-3 px-8 rounded-md text-lg font-semibold mb-6 transition-colors duration-300`}
         >
             Buy Now
         </Link>

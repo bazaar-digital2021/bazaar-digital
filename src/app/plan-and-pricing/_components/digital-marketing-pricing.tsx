@@ -291,10 +291,10 @@ const CreativeBundleTable = () => (
         <table className="w-full border border-gray-300">
             <thead>
                 <tr>
-                    <th className="bg-yellow-300 text-black text-xl font-bold text-center px-4 py-3 border-r border-gray-300">Instagram Marketing</th>
-                    <th className="bg-yellow-300 text-black text-xl font-bold text-center px-4 py-3 border-r border-gray-300">Facebook Marketing</th>
-                    <th className="bg-yellow-300 text-black text-xl font-bold text-center px-4 py-3 border-r border-gray-300">Content Creation</th>
-                    <th className="bg-yellow-300 text-black text-xl font-bold text-center px-4 py-3">&nbsp;</th>
+                    <th className="bg-primary text-white text-xl font-bold text-center px-4 py-3 border-r border-gray-300">Instagram Marketing</th>
+                    <th className="bg-primary text-white text-xl font-bold text-center px-4 py-3 border-r border-gray-300">Facebook Marketing</th>
+                    <th className="bg-primary text-white text-xl font-bold text-center px-4 py-3 border-r border-gray-300">Content Creation</th>
+                    <th className="bg-primary text-white text-xl font-bold text-center px-4 py-3">&nbsp;</th>
                 </tr>
             </thead>
             <tbody>
@@ -315,16 +315,16 @@ const CreativeBundleTable = () => (
 const DigitalMarketingPricing = () => (
     <div className="w-full max-w-7xl mx-auto px-2 md:px-6 py-12">
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-center md:justify-center mb-8 md:gap-28">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-start mb-8 ">
             <div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-0">Features Comparison</h2>
             </div>
-            <div className="flex flex-col md:flex-row md:space-x-8 w-full md:w-auto">
+            <div className="flex flex-col md:ml-8 md:flex-row md:gap-16 w-full md:w-auto">
                 {plans.map((plan, idx) => (
                     <div key={plan.name} className="flex flex-col items-center mb-6 md:mb-0 w-full md:w-auto">
-                        <span className={clsx('text-xl font-bold mb-1', plan.color)}>{plan.name}</span>
+                        <span className={clsx('text-xl font-bold mb-1 text-primary',)}>{plan.name}</span>
                         <span className="text-lg font-bold mb-2">{plan.price}</span>
-                        <button className={clsx('text-white font-semibold py-2 px-6 rounded mb-2', plan.button)}>{plan.btnText}</button>
+                        <button className={clsx('text-white font-semibold py-2 px-6 rounded mb-2 bg-secondary',)}>{plan.btnText}</button>
                     </div>
                 ))}
             </div>

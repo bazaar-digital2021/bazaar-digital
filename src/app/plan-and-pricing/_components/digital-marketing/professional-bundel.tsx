@@ -4,8 +4,8 @@ const ProfessionalBundleTable = () => (
         <table className="w-full border border-gray-300">
             <thead>
                 <tr>
-                    <th className="bg-yellow-300 text-black text-xl font-bold text-center px-4 py-3 border-r border-gray-300" colSpan={2}>Instagram Marketing</th>
-                    <th className="bg-yellow-300 text-black text-xl font-bold text-center px-4 py-3 border-l border-gray-300" colSpan={2}>Facebook Marketing</th>
+                    <th className="bg-primary text-white text-xl font-bold text-center px-4 py-3 border-r border-gray-300" colSpan={2}>Instagram Marketing</th>
+                    <th className="bg-primary text-white text-xl font-bold text-center px-4 py-3 border-l border-gray-300" colSpan={2}>Facebook Marketing</th>
                 </tr>
             </thead>
             <tbody>

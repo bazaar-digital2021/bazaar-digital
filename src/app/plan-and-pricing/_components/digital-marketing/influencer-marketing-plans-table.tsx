@@ -34,9 +34,9 @@ const InfluencerMarketingPlansTable = () => (
             {influencerPlans.map((plan) => (
                 <div key={plan.name} className="bg-white rounded-lg shadow border border-gray-200 flex flex-col items-center pb-6">
                     <div className="w-full text-center pt-6">
-                        <span className={`block text-2xl font-bold mb-2 ${plan.color}`}>{plan.name}</span>
+                        <span className={`block text-2xl font-bold mb-2 text-primary`}>{plan.name}</span>
                         <span className="block text-3xl font-bold mb-2">{plan.price}</span>
-                        <button className={`${plan.button} text-white font-semibold py-2 px-8 rounded mb-4`}>{plan.btnText}</button>
+                        <button className={`bg-secondary text-white font-semibold py-2 px-8 rounded mb-4`}>{plan.btnText}</button>
                     </div>
                     <div className="w-full px-6">
                         <div className="border border-gray-300 rounded-lg py-6 text-center text-xl font-semibold mt-4">

@@ -11,7 +11,7 @@ const PricingHeadingTitle: React.FC<PricingHeadingTitleProps> = ({
 }) => {
     return (
         <div className="text-center max-w-4xl mx-auto py-8 md:py-12 px-4">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-4 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-4 leading-tight">
                 {title}
             </h1>
             {subtitle && (
