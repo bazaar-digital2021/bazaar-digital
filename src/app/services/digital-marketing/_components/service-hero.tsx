@@ -21,7 +21,7 @@ export function ServiceHero({ title, description, image }: ServiceHeroProps) {
                         transition={{ duration: 0.8 }}
                         className="space-y-6"
                     >
-                        <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
+                        <h1 className="text-4xl md:text-5xl font-bold text-primary">
                             {title}
                         </h1>
                         <p className="text-lg text-gray-600 leading-relaxed">

@@ -62,7 +62,7 @@ export const navigation: Navigation = [
                     },
                     {
                         "title": "Influencer Marketing",
-                        "href": "/services/digital-marketing/influencer-marketing"
+                        "href": "/services/digital-marketing#influencer-marketing"
                     },
                     {
                         "title": "Content Marketing",
@@ -103,23 +103,23 @@ export const navigation: Navigation = [
                 "items": [
                     {
                         "title": "Facebook & Instagram Ads",
-                        "href": "/services/ppc/facebook-instagram-ads"
+                        "href": "/services/ppc#facebook-instagram-ads"
                     },
                     {
                         "title": "Google Ads",
-                        "href": "/services/ppc/google-ads"
+                        "href": "/services/ppc#google-ads"
                     },
                     {
                         "title": "Youtube Ads",
-                        "href": "/services/ppc/youtube-ads"
+                        "href": "/services/ppc#youtube-ads"
                     },
                     {
                         "title": "Marketplace Ads",
-                        "href": "/services/ppc/marketplace-ads"
+                        "href": "/services/ppc#marketplace-ads"
                     },
                     {
                         "title": "LinkedIn Ads",
-                        "href": "/services/ppc/linkedin-ads"
+                        "href": "/services/ppc#linkedin-ads"
                     }
                 ]
             },
@@ -128,23 +128,23 @@ export const navigation: Navigation = [
                 "items": [
                     {
                         "title": "Label & Package Designing",
-                        "href": "/services/designing/label-package"
+                        "href": "/services/designing#label-package"
                     },
                     {
                         "title": "Flyers & Billboard Banners Designing",
-                        "href": "/services/designing/flyers-billboards"
+                        "href": "/services/designing#flyers-billboards"
                     },
                     {
                         "title": "Presentation/Brochure Designing",
-                        "href": "/services/designing/presentation-brochure"
+                        "href": "/services/designing#presentation-brochure"
                     },
                     {
                         "title": "Video Creation/Editing",
-                        "href": "/services/designing/video-editing"
+                        "href": "/services/designing#video-editing"
                     },
                     {
                         "title": "UI/UX Designing",
-                        "href": "/services/designing/ui-ux"
+                        "href": "/services/designing#ui-ux"
                     }
                 ]
             }
