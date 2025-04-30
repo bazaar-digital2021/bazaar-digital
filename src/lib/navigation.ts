@@ -58,43 +58,43 @@ export const navigation: Navigation = [
                 "items": [
                     {
                         "title": "Social Media Marketing",
-                        "href": "/plan-and-pricing/digital-media-marketing-plan-and-pricing"
+                        "href": "/services/digital-marketing#social-media-marketing"
                     },
                     {
                         "title": "Influencer Marketing",
-                        "href": "/plan-and-pricing/digital-media-marketing-plan-and-pricing"
+                        "href": "/services/digital-marketing/influencer-marketing"
                     },
                     {
                         "title": "Content Marketing",
-                        "href": "/plan-and-pricing/digital-media-marketing-plan-and-pricing"
+                        "href": "/services/digital-marketing#content-marketing"
                     },
                     {
                         "title": "Public Relations (PR)",
-                        "href": "/plan-and-pricing/digital-media-marketing-plan-and-pricing"
+                        "href": "/services/digital-marketing#public-relations-pr"
                     },
                     {
                         "title": "Neuro Marketing",
-                        "href": "/plan-and-pricing/digital-media-marketing-plan-and-pricing"
+                        "href": "/services/digital-marketing#neuro-marketing"
                     },
                     {
                         "title": "Diversity Marketing",
-                        "href": "/plan-and-pricing/digital-media-marketing-plan-and-pricing"
+                        "href": "/services/digital-marketing#diversity-marketing"
                     },
                     {
                         "title": "Email Marketing",
-                        "href": "/plan-and-pricing/digital-media-marketing-plan-and-pricing"
+                        "href": "/services/digital-marketing#email-marketing"
                     },
                     {
                         "title": "Online Reputation Management (ORM)",
-                        "href": "/plan-and-pricing/digital-media-marketing-plan-and-pricing"
+                        "href": "/services/digital-marketing#online-reputation-management-orm"
                     },
                     {
                         "title": "B2C Marketing",
-                        "href": "/plan-and-pricing/digital-media-marketing-plan-and-pricing"
+                        "href": "/services/digital-marketing#b2c-marketing"
                     },
                     {
                         "title": "Whatsapp Marketing",
-                        "href": "/plan-and-pricing/digital-media-marketing-plan-and-pricing"
+                        "href": "/services/digital-marketing#whatsapp-marketing"
                     }
                 ]
             },

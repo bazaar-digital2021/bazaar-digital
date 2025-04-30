@@ -324,7 +324,7 @@ const DigitalMarketingPricing = () => (
                     <div key={plan.name} className="flex flex-col items-center mb-6 md:mb-0 w-full md:w-auto">
                         <span className={clsx('text-xl font-bold mb-1 text-primary',)}>{plan.name}</span>
                         <span className="text-lg font-bold mb-2">{plan.price}</span>
-                        <button className={clsx('text-white font-semibold py-2 px-6 rounded mb-2 bg-secondary',)}>{plan.btnText}</button>
+                        <button className={clsx('text-white font-semibold py-2 px-6 rounded mb-2 bg-secondary pt-3',)}>{plan.btnText}</button>
                     </div>
                 ))}
             </div>
