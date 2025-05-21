@@ -41,7 +41,7 @@ const Testimonial = () => {
                                             </p>
                                         </div>
                                     </div>
-                                    <blockquote>
+                                    {/* <blockquote>
                                         <p className="text-muted-foreground italic relative">
                                             <span className="text-3xl text-primary absolute -top-4 -left-2">
                                                 &quot;
@@ -51,7 +51,18 @@ const Testimonial = () => {
                                                 &quot;
                                             </span>
                                         </p>
-                                    </blockquote>
+                                    </blockquote> */}
+                                    <video width="320" height="240" controls preload="auto">
+                                        <source src={testimonial.videoUrl} type="video/mp4" />
+                                        {/* <track
+                                            // src="/path/to/captions.vtt"
+                                            kind="subtitles"
+                                            srcLang="en"
+                                            label="English"
+                                        /> */}
+                                        Your browser does not support the video tag.
+                                    </video>
+
                                 </div>
                             </CardContent>
                         </Card>

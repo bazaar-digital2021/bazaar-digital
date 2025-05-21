@@ -1,26 +1,23 @@
 export const testimonial = [
   {
-    quote:
-      "I'm so glad To working with Bazaar Digital. Their software solutions have transformed my business. It's a game-changer!",
-    author: "Jitendra Kumar",
-    image: "https://randomuser.me/api/portraits/men/75.jpg",
-    role: "Software Engineer",
-    company: "Tech Giant Co.",
+    author: "Captain A.K. Jha",
+    image: "https://randomuser.me/api/portraits/men/76.jpg",
+    role: "Director",
+    company: "Radiance Classes.",
+    videoUrl: '/testimonial/AK-jha.mp4',
   },
   {
-    quote:
-      "Bazaar Digital's website is a game-changer. It's user-friendly and visually stunning. Highly recommended!",
-    author: "Rajesh Kumar",
+    author: "Rajesh Choudhary ",
     image: "https://randomuser.me/api/portraits/men/75.jpg",
-    role: "Product Manager",
-    company: "StartUp Inc.",
+    role: "Owner",
+    company: "Srijan Mithila.",
+    videoUrl: '/testimonial/naval.mp4',
   },
   {
-    quote:
-      "Baazar Digital's Digital Marketing solutions have boosted our online presence. They're a game-changer!",
-    author: "Priya Patel",
-    image: "https://randomuser.me/api/portraits/women/74.jpg",
-    role: "Marketing Director",
-    company: "Global Corp",
+    author: "Nancy Kriplani",
+    image: "https://randomuser.me/api/portraits/women/1.jpg",
+    role: "Studio 11 Salon",
+    company: "Global Corp.",
+    videoUrl: '/testimonial/nancy.mp4',
   },
 ];

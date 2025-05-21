@@ -173,7 +173,7 @@ export default function OurStory() {
                         className="order-1 md:order-2 relative rounded-lg overflow-hidden shadow-xl h-[300px] md:h-[400px]"
                     >
                         <Image
-                            src="/bd-office-3.JPEG"
+                            src="/geographical.webp"
                             alt="Partnership ceremony"
                             fill
                             className="object-cover"
@@ -194,7 +194,7 @@ export default function OurStory() {
                         className="relative rounded-lg overflow-hidden shadow-xl h-[300px] md:h-[400px]"
                     >
                         <Image
-                            src="/bd-office-2.JPEG"
+                            src="/creative.webp"
                             alt="Modern Bazaar Digital office"
                             fill
                             className="object-cover"
