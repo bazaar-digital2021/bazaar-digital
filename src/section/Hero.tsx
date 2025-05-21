@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
+import { useRouter } from '@bprogress/next/app'
 
 export default function Hero() {
     const [isLoaded, setIsLoaded] = useState(false)
@@ -12,6 +13,7 @@ export default function Hero() {
     useEffect(() => {
         setIsLoaded(true)
     }, [])
+    const router = useRouter();
 
     // Floating elements data for orbit animation with digital marketing services icons
 
@@ -72,7 +74,7 @@ export default function Hero() {
 
 
                         <motion.div
-                            className="text-6xl md:text-9xl font-bold text-primary relative"
+                            className="text-6xl md:text-9xl font-bold text-primary"
                             initial={{ opacity: 0, scale: 0.8 }}
                             animate={isLoaded ? { opacity: 1, scale: 1 } : {}}
                             transition={{
@@ -112,7 +114,7 @@ export default function Hero() {
                             <Button
                                 className=" bg-primary text-xl text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-all  gap-2 "
                                 size='lg'
-
+                                onClick={() => router.push('/contact-us')}
                             >
                                 <span className='inline-block pt-2 items-center gap-2'>
 

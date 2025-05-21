@@ -16,7 +16,7 @@ export default function OurServices() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
                     {/* Digital Marketing Service */}
-                    <div className="border-t border-white/30 pt-6">
+                    <Link href="/services/digital-marketing" className="border-t border-white/30 pt-6">
                         <div className="flex justify-between items-start mb-6">
                             <h3 className="text-2xl md:text-3xl font-[700]">Digital Marketing Services</h3>
                             <div className="bg-white/20 rounded-full p-2 hover:bg-white/30 transition-colors">
@@ -33,14 +33,14 @@ export default function OurServices() {
                             PPC, social media marketing, and content marketing to help you build a
                             successful online business.
                         </p>
-                    </div>
+                    </Link>
 
                     {/* Web Development Service */}
-                    <div className="border-t border-white/30 pt-6">
+                    <Link href="/services/web-services" className="border-t border-white/30 pt-6">
                         <div className="flex justify-between items-start mb-6">
                             <h3 className="text-2xl md:text-3xl font-[700]">Website Development</h3>
                             <div className="bg-white/20 rounded-full p-2 hover:bg-white/30 transition-colors">
-                                <Link href="/services/website-development">
+                                <Link href="/services/web-services">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                         <path d="M7 17L17 7" />
                                         <path d="M7 7h10v10" />
@@ -53,14 +53,14 @@ export default function OurServices() {
                             website that represents your brand and drives conversions with modern
                             technologies and best practices.
                         </p>
-                    </div>
+                    </Link>
 
                     {/* Social Media Service */}
-                    <div className="border-t border-white/30 pt-6">
+                    <Link href="/services/digital-marketing#social-media-marketing" className="border-t border-white/30 pt-6">
                         <div className="flex justify-between items-start mb-6">
                             <h3 className="text-2xl md:text-3xl font-[700]">Social Media Management</h3>
                             <div className="bg-white/20 rounded-full p-2 hover:bg-white/30 transition-colors">
-                                <Link href="/services/social-media">
+                                <Link href="/services/digital-marketing#social-media-marketing">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                         <path d="M7 17L17 7" />
                                         <path d="M7 7h10v10" />
@@ -73,14 +73,14 @@ export default function OurServices() {
                             engagement, increase ROI, and reach your target audience more effectively
                             across all major platforms.
                         </p>
-                    </div>
+                    </Link>
 
                     {/* Content Marketing Service */}
                     <div className="border-t border-white/30 pt-6">
                         <div className="flex justify-between items-start mb-6">
                             <h3 className="text-2xl md:text-3xl font-[700]">Content Marketing</h3>
                             <div className="bg-white/20 rounded-full p-2 hover:bg-white/30 transition-colors">
-                                <Link href="/services/content-marketing">
+                                <Link href="/services/digital-marketing#content-marketing">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                         <path d="M7 17L17 7" />
                                         <path d="M7 7h10v10" />

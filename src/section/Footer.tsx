@@ -80,14 +80,7 @@ export default function Footer() {
                                     Contact Us
                                 </Link>
                             </li>
-                            <Button
-                                className=" text-white hover:text-white/80 rounded-full px-4 pt-3 mb-2 "
-                                asChild
-                            >
-                                <Link href="tel:+918210546110">
-                                    Book a Call
-                                </Link>
-                            </Button>
+
                         </ul>
                     </div>
 

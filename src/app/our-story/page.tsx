@@ -99,7 +99,7 @@ export default function OurStory() {
                         className="order-1 md:order-2 relative rounded-lg overflow-hidden shadow-xl h-[300px] md:h-[400px]"
                     >
                         <Image
-                            src="/bd-office-1.JPEG"
+                            src="/beginning.webp"
                             alt="Bazaar Digital's first office"
                             fill
                             className="object-cover"
@@ -120,7 +120,7 @@ export default function OurStory() {
                         className="relative rounded-lg overflow-hidden shadow-xl h-[300px] md:h-[400px]"
                     >
                         <Image
-                            src="/team-growth.jpg"
+                            src="/modest.webp"
                             alt="Growing team at Bazaar Digital"
                             fill
                             className="object-cover"

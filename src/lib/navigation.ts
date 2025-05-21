@@ -13,10 +13,6 @@ export const navigation: Navigation = [
         href: '/our-story',
     },
     {
-        title: 'Our Teams',
-        href: '/our-teams'
-    },
-    {
 
         "title": "Our Services",
         "items": [

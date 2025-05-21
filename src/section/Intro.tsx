@@ -61,56 +61,55 @@ export default function Intro() {
                         Your Trusted <span className='text-primary '>Google & Meta Partner</span>
                     </h1>
                 </motion.div>
-                <div className='flex gap-5 md:gap-8 flex-col md:flex-row justify-between items-start mb-5 md:mb-10'>
+                <div className='flex gap-5 md:gap-8 flex-col md:flex-row justify-between items-start my-5 md:my-10'>
+                    <motion.div
+                        className="flex items-center justify-center gap-8 md:gap-12 flex-1 "
+                        initial="hidden"
+                        animate={isVisible ? "visible" : "hidden"}
+                    >
+                        <motion.div
 
+                            variants={fadeIn}
+                            custom={1}
+                            whileHover={{ scale: 1.05, boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)" }}
+                            transition={{ duration: 0.2 }}
+                        >
+                            <Image
+                                src="/meta.svg"
+                                alt="Meta Business Partner"
+                                width={300}
+                                height={300}
+                                className="object-cover"
+                            />
+                        </motion.div>
+                        <motion.div
 
+                            variants={fadeIn}
+                            custom={2}
+                            whileHover={{ scale: 1.05, boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)" }}
+                            transition={{ duration: 0.2 }}
+                        >
+                            <Image
+                                src="/google.svg"
+                                alt="Google Partner"
+                                width={300}
+                                height={300}
+                                className="object-cover"
+                            />
+                        </motion.div>
+                    </motion.div>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {/* Left Content Area */}
                     <div className='space-y-6'>
 
 
-                        <motion.div
-                            className="flex gap-4 items-center flex-1 "
-                            initial="hidden"
-                            animate={isVisible ? "visible" : "hidden"}
-                        >
-                            <motion.div
-
-                                variants={fadeIn}
-                                custom={1}
-                                whileHover={{ scale: 1.05, boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)" }}
-                                transition={{ duration: 0.2 }}
-                            >
-                                <Image
-                                    src="/meta.svg"
-                                    alt="Meta Business Partner"
-                                    width={40}
-                                    height={40}
-                                    className="h-auto w-auto"
-                                />
-                            </motion.div>
-                            <motion.div
-
-                                variants={fadeIn}
-                                custom={2}
-                                whileHover={{ scale: 1.05, boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)" }}
-                                transition={{ duration: 0.2 }}
-                            >
-                                <Image
-                                    src="/google.svg"
-                                    alt="Google Partner"
-                                    width={40}
-                                    height={40}
-                                    className="h-auto w-auto"
-                                />
-                            </motion.div>
-                        </motion.div>
-
-                        <div className=" space-y-6">
 
 
-                            <div className="pt-10 space-y-4">
+                        <div className=" space-y-6 mt-16">
+
+
+                            <div className="pt-10  space-y-4">
                                 {/* <motion.h2
                                     className="flex items-center text-lg font-semibold gap-2 text-[#1a237e]"
                                     initial="hidden"
@@ -219,28 +218,15 @@ export default function Intro() {
                                     {/* Fixed overlay - no animation on the gradient itself */}
                                     {/* <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent z-10 pointer-events-none" /> */}
 
-                                    <p className='text-black text-lg'>
-                                        As a trusted Google and Meta Partner, Bazaar Digital brings advanced tools, exclusive insights, and expert strategies to maximise your digital marketing success. Partner with us to leverage top-tier PPC and social media advertising that drives real results.
-                                    </p>
-                                    <div className=' mt-4 md:mt-4'>
-                                        <Button
-                                            className=" bg-primary text-xl text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-all  gap-2 py-6 px-8"
-                                            size='lg'
+                                    {/* <p className='text-black text-lg'>
+                                        As a trusted Google & Meta Partner, Bazaar Digital offers expert strategies, exclusive insights, and powerful tools to boost your digital marketing success. Partner with us for high-impact PPC and social media advertising.
+                                    </p> */}
 
-                                        >
-                                            <span className='inline-block pt-2 items-center gap-2'>
-
-                                                Discover Our Approach
-                                            </span>
-                                            <ArrowRight className='w-8 h-8 ml-2' />
-                                        </Button>
-
-                                    </div>
                                 </motion.div>
                             </div>
                         </div>
                         {/* ABOUT US IMAGES */}
-                        <div className='grid grid-cols-2 gap-4 mt-4 md:mt-12'>
+                        <div className='grid grid-cols-2 gap-4 mt-4 md:mt-20'>
                             <div className='relative rounded-2xl overflow-hidden'>
                                 <Image src="/bd-office-1.JPEG" alt="About Us" width={500} height={500} className='rounded-2xl' />
                             </div>

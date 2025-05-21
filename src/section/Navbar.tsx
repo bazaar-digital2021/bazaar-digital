@@ -58,7 +58,14 @@ export default function Navbar() {
                     {/* Desktop Navigation */}
                     <nav className="hidden md:flex flex-1 justify-end">
                         <DesktopNav items={navigation} />
-
+                        <Button
+                            className=" text-white hover:text-white/80 rounded-full px-4 pt-3 mb-2 ml-2 animate-pulse"
+                            asChild
+                        >
+                            <Link href="tel:+918210546110">
+                                Book a Call
+                            </Link>
+                        </Button>
                     </nav>
 
                 </div>

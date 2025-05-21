@@ -44,12 +44,16 @@ const OurClients = () => {
                     initial={{ opacity: 0 }}
                     animate={isInView ? { opacity: 1 } : { opacity: 0 }}
                     transition={{ duration: 1 }}
-                    className="text-center"
+                    className="text-center flex flex-col gap-2"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-3">
-                        Our Clients
+                    <h2 className="text-lg md:text-xl font-semibold text-white ">
+                        OUR CLIENTS
                     </h2>
-                    <div className="h-1 w-24 md:w-40 bg-white mx-auto rounded-full" />
+                    {/* <div className="h-1 w-24 md:w-40 bg-white mx-auto rounded-full" /> */}
+                    <h1 className='text-white/80 text-4xl md:text-5xl font-bold uppercase'>A Trusted Digital Partner</h1>
+                    <h2 className="text-lg md:text-xl  text-white mb-3">
+                        We Deliver Digital Services To Brands Of All Sizes
+                    </h2>
                 </motion.div>
             </div>
 
