@@ -18,6 +18,7 @@ export const navigation: Navigation = [
         "items": [
             {
                 "title": "Development",
+                "href": '/services/web-services',
                 "items": [
                     {
                         "title": "Wordpress Development",
@@ -55,6 +56,7 @@ export const navigation: Navigation = [
             },
             {
                 "title": "Digital Marketing",
+                "href": '/services/digital-marketing',
                 "items": [
                     {
                         "title": "Social Media Marketing",
@@ -100,6 +102,7 @@ export const navigation: Navigation = [
             },
             {
                 "title": "PPC/Paid Marketing",
+                "href": "/services/ppc",
                 "items": [
                     {
                         "title": "Facebook & Instagram Ads",
@@ -125,6 +128,7 @@ export const navigation: Navigation = [
             },
             {
                 "title": "Designing",
+                "href": '/services/designing',
                 "items": [
                     {
                         "title": "Label & Package Designing",

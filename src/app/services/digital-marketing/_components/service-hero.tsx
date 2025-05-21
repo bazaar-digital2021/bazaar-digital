@@ -41,13 +41,13 @@ export function ServiceHero({ title, description, image }: ServiceHeroProps) {
                         initial={{ opacity: 0, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="relative h-[400px] w-full"
+                        className="relative h-[400px] w-full rounded-md overflow-hidden"
                     >
                         <Image
                             src={image}
                             alt={title}
                             fill
-                            className="object-contain"
+                            className="object-contain rounded-md"
                             priority
                         />
                     </motion.div>

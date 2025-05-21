@@ -252,9 +252,9 @@ export default function Intro() {
                     </div>
                 </div>
             </motion.div>
-            <div className='col-span-2 mt-8'>
+            {/* <div className='col-span-2 mt-8'>
                 <MovingMessages />
-            </div>
+            </div> */}
         </section>
     )
 }

@@ -5,6 +5,8 @@ import { motion, AnimatePresence } from "framer-motion"
 import { useState, useRef, useEffect } from "react"
 import { NavItem } from "@/lib/navigation"
 import { ChevronDown } from "lucide-react"
+import { useRouter } from "@bprogress/next/app"
+
 
 interface DesktopNavProps {
     items: NavItem[]
@@ -53,6 +55,7 @@ function NavItemComponent({ item, index, isActive, setActiveIndex, isLast }: Nav
     const ref = useRef<HTMLDivElement>(null);
     const dropdownRef = useRef<HTMLDivElement>(null);
     const [dropdownPosition, setDropdownPosition] = useState<'left' | 'center' | 'right'>('center');
+
 
     // Determine dropdown position based on viewport
     useEffect(() => {
@@ -159,7 +162,7 @@ interface DropdownItemProps {
 function DropdownItem({ item, depth = 0, setParentIndex, isLast }: DropdownItemProps) {
     const [open, setOpen] = useState(false)
     const itemRef = useRef<HTMLDivElement>(null)
-
+    const router = useRouter();
     const handleMouseEnter = () => {
         if (item.items) {
             setOpen(true);
@@ -200,6 +203,8 @@ function DropdownItem({ item, depth = 0, setParentIndex, isLast }: DropdownItemP
         >
             <button
                 className={`flex w-full items-center justify-between rounded-md px-3 py-2 text-sm text-gray-700 ${open ? "bg-primary/5 text-primary" : "hover:bg-primary/5 hover:text-primary"}`}
+                onClick={() => router.push(item.href || '#')}
+
             >
                 {item.title}
                 <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${open ? "rotate-180" : ""}`} />

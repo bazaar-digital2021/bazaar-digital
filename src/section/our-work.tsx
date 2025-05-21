@@ -16,7 +16,7 @@ export default function OurWork() {
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className=' px-4 md:px-12  py-12 md:py-20 overflow-hidden'
+            className=' px-4 md:px-12  pb-12 md:pb-20 overflow-hidden'
             id='about'
         >
             <div className='grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-8 md:gap-12 overflow-hidden'>
