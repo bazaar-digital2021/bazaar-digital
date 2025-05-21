@@ -397,8 +397,8 @@ export default function OurStory() {
 
                 </motion.div>
                 <Button
-                    onClick={() => router.push('/our-team')}
-                    className='mt-4 md:mt-8'>
+                    onClick={() => router.push('/our-teams')}
+                    className='mt-4 md:mt-8 -pt-2'>
                     View All Team <FaArrowCircleRight className='ml-2 h-6 w-6' />
                 </Button>
             </motion.div>

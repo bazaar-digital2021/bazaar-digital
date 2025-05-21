@@ -19,16 +19,25 @@ const OurClients = () => {
         { id: 7, alt: 'Google', placeholder: '/companies/7.webp' },
         { id: 8, alt: 'Microsoft', placeholder: '/companies/8.webp' },
         { id: 9, alt: 'Amazon', placeholder: '/companies/9.webp' },
+        { id: 10, alt: '10', placeholder: '/companies/10.webp' },
+        { id: 11, alt: '11', placeholder: '/companies/11.webp' },
+        { id: 12, alt: '12', placeholder: '/companies/12.webp' },
+        { id: 13, alt: '13', placeholder: '/companies/13.webp' },
+        { id: 14, alt: '14', placeholder: '/companies/14.webp' },
+        { id: 15, alt: '15', placeholder: '/companies/15.webp' },
+        { id: 16, alt: '16', placeholder: '/companies/16.webp' },
+        { id: 17, alt: '17', placeholder: '/companies/17.webp' },
     ];
 
     // Divide logos into two rows
-    const firstRow = [...companyLogos.slice(0, 5)];
-    const secondRow = [...companyLogos.slice(5)];
+    const firstRow = [...companyLogos.slice(0, 9)];
+    const secondRow = [...companyLogos.slice(9)];
 
     return (
         <section
             ref={ref}
             className="py-16 bg-primary relative overflow-hidden"
+            id='our-clients'
         >
             <div className="container mx-auto px-4 mb-12">
                 <motion.div
@@ -173,10 +182,10 @@ const OurClients = () => {
                 }
                 
                 /* Pause on hover for a more subtle interactive effect */
-                .marquee:hover .marquee-content,
-                .marquee-reverse:hover .marquee-content {
-                    animation-play-state: paused;
-                }
+                // .marquee:hover .marquee-content,
+                // .marquee-reverse:hover .marquee-content {
+                //     animation-play-state: paused;
+                // }
             `}</style>
         </section>
     );

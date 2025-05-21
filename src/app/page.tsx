@@ -15,8 +15,8 @@ export default function Home() {
       <Intro />
       <OurWork />
       <OurClients />
-      <Testimonial />
       <CareerSection />
+      <Testimonial />
     </main>
   )
 }

@@ -3,7 +3,7 @@ export const servicesData = [
         id: "social-media-marketing",
         title: "Social Media Marketing",
         description: "Build your brand presence across social media platforms with strategic content and engagement strategies.",
-        image: "/digital/social.jpg",
+        image: "/digital/social.png",
         features: {
             title: "What Our Social Media Marketing Can Do For Your Business",
             features: [

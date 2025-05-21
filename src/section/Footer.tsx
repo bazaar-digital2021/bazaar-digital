@@ -59,26 +59,26 @@ export default function Footer() {
                                     Our Story
                                 </Link>
                             </li>
-                            <li>
+                            {/* <li>
                                 <Link href="/services" className="text-gray-400 hover:text-white transition-colors">
                                     Services
                                 </Link>
-                            </li>
+                            </li> */}
                             <li>
-                                <Link href="/our-clients" className="text-gray-400 hover:text-white transition-colors">
+                                <Link href="#our-clients" className="text-gray-400 hover:text-white transition-colors">
                                     Our Clients
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/careers" className="text-gray-400 hover:text-white transition-colors">
-                                    Career
+                                <Link href="/our-teams" className="text-gray-400 hover:text-white transition-colors">
+                                    Our Teams
                                 </Link>
                             </li>
-                            <li>
+                            {/* <li>
                                 <Link href="/blog" className="text-gray-400 hover:text-white transition-colors">
                                     Blog
                                 </Link>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
 
@@ -92,23 +92,23 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/services/website-development" className="text-gray-400 hover:text-white transition-colors">
+                                <Link href="/services/web-services" className="text-gray-400 hover:text-white transition-colors">
                                     Website Development
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/services/social-media" className="text-gray-400 hover:text-white transition-colors">
+                                <Link href="/services/digital-marketing#social-media-marketing" className="text-gray-400 hover:text-white transition-colors">
                                     Social Media Management
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/services/content-marketing" className="text-gray-400 hover:text-white transition-colors">
+                                <Link href="/services/digital-marketing#content-marketing" className="text-gray-400 hover:text-white transition-colors">
                                     Content Marketing
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/services/seo" className="text-gray-400 hover:text-white transition-colors">
-                                    SEO Services
+                                <Link href="/services/ppc" className="text-gray-400 hover:text-white transition-colors">
+                                    Paid Maketing
                                 </Link>
                             </li>
                         </ul>
