@@ -177,10 +177,10 @@ export const navigation: Navigation = [
 
         ]
     },
-    {
-        title: 'Contact Us',
-        href: '/contact-us'
-    }
+    // {
+    //     title: 'Contact Us',
+    //     href: '/contact-us'
+    // }
 
 
 ]; 
