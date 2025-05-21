@@ -4,6 +4,9 @@ import { Metadata } from 'next'
 import { generatePageMetadata } from '@/lib/metadata'
 import Breadcrumbs from '@/components/SEO/Breadcrumbs'
 import { motion } from 'framer-motion'
+import { Button } from '@/components/ui/button'
+import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa'
+import { useRouter } from '@bprogress/next/app'
 
 // export const metadata: Metadata = generatePageMetadata({
 //     title: 'Our Story',
@@ -13,6 +16,7 @@ import { motion } from 'framer-motion'
 // })
 
 export default function OurStory() {
+    const router = useRouter();
     const fadeIn = {
         hidden: { opacity: 0, y: 20 },
         visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
@@ -375,10 +379,10 @@ export default function OurStory() {
                     >
                         <div className="relative h-[300px]">
                             <Image
-                                src="/tech-lead.jpg"
+                                src="/team/saurabh.jpeg"
                                 alt="Technology Lead"
                                 fill
-                                className="object-cover"
+                                className="object-cover object-top"
                             />
                         </div>
                         <div className="p-6">
@@ -389,7 +393,14 @@ export default function OurStory() {
                             </p>
                         </div>
                     </motion.div>
+
+
                 </motion.div>
+                <Button
+                    onClick={() => router.push('/our-team')}
+                    className='mt-4 md:mt-8'>
+                    View All Team <FaArrowCircleRight className='ml-2 h-6 w-6' />
+                </Button>
             </motion.div>
 
             {/* Call to Action */}
