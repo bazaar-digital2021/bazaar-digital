@@ -4,7 +4,7 @@ export const testimonial = [
     image: "/testimonial/Ak-jha.png",
     role: "Director",
     company: "Radiance Classes.",
-    videoUrl: '/testimonial/AK-jha.mp4',
+    videoUrl: '/testimonial/Ak-jha.mp4',
   },
   {
     author: "Rajesh Choudhary ",
