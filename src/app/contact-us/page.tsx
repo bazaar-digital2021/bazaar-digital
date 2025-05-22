@@ -52,9 +52,16 @@ export default function ContactUs() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                     {/* Left Column - Images and Text */}
                     <div className="space-y-8 items-start">
-                        <div className="grid gap-4">
-                            <Image src="/contact-office.webp" alt="Office Design" width={600} height={500} className="rounded-lg object-cover h-full w-full" />
+
+                        <div className='grid grid-cols-2 gap-8 mt-4 md:mt-20'>
+                            <div className='relative rounded-2xl overflow-hidden h-[400px] w-[300px]'>
+                                <Image src="/contact-us.webp" alt="About Us" fill className='rounded-2xl' />
+                            </div>
+                            <div className='relative rounded-2xl overflow-hidden h-[400px] w-[300px] -mt-10'>
+                                <Image src="/helping-client2.webp" alt="About Us" fill className='object-cover' />
+                            </div>
                         </div>
+
 
                         <div className="space-y-6 ">
                             <div >

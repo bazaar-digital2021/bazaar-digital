@@ -69,7 +69,7 @@ export const servicesData = [
             ],
         },
         collaboration: {
-            title: "Techfluencers X Brands",
+            title: "Bazaar Digital's influencer X Brands",
             description: "Partner with us to create impactful influencer campaigns that drive real results.",
             features: [
                 {

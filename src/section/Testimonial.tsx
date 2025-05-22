@@ -83,11 +83,11 @@ const Testimonial = () => {
                                                         />
                                                     </div>
                                                     <div>
-                                                        <p className="font-semibold">{testimonial.author}</p>
+                                                        <p className="font-bold text-primary text-lg md:text-xl">{testimonial.author}</p>
                                                         <p className="text-sm text-muted-foreground">
                                                             {testimonial.role}
                                                         </p>
-                                                        <p className="text-sm text-primary">
+                                                        <p className="text-sm text-secondary">
                                                             {testimonial.company}
                                                         </p>
                                                     </div>

@@ -35,7 +35,7 @@ const serviceData = {
         ],
     },
     collaboration: {
-        title: "Techfluencers X Brands",
+        title: "Bazaar Digital's influencer X Brands",
         description: "Partner with us to create impactful influencer campaigns that drive real results. Our team of experts will help you identify and collaborate with the right influencers for your brand.",
         features: [
             {

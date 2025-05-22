@@ -41,7 +41,7 @@ export function ServiceHero({ title, description, image }: ServiceHeroProps) {
                         initial={{ opacity: 0, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="relative h-[400px] w-full rounded-md overflow-hidden"
+                        className="relative h-[400px] md:h-[600px] w-full rounded-md overflow-hidden"
                     >
                         <Image
                             src={image}

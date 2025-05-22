@@ -197,7 +197,7 @@ export default function OurStory() {
                             src="/creative.webp"
                             alt="Modern Bazaar Digital office"
                             fill
-                            className="object-cover"
+                            className="object-cover object-center scale-110"
                         />
                     </motion.div>
                     <motion.div variants={slideRight}>
