@@ -227,11 +227,11 @@ export default function Intro() {
                         </div>
                         {/* ABOUT US IMAGES */}
                         <div className='grid grid-cols-2 gap-4 mt-4 md:mt-20'>
-                            <div className='relative rounded-2xl overflow-hidden'>
-                                <Image src="/bd-office-1.JPEG" alt="About Us" width={500} height={500} className='rounded-2xl' />
+                            <div className='relative rounded-2xl overflow-hidden h-[400px] w-[300px]'>
+                                <Image src="/helping-client.webp" alt="About Us" fill className='rounded-2xl' />
                             </div>
-                            <div className='relative rounded-2xl overflow-hidden mt-10'>
-                                <Image src="/design.png" alt="About Us" width={500} height={500} />
+                            <div className='relative rounded-2xl overflow-hidden h-[400px] w-[300px] mt-10'>
+                                <Image src="/helping-client2.webp" alt="About Us" fill className='object-cover' />
                             </div>
                         </div>
 

@@ -1,23 +1,37 @@
 export const testimonial = [
   {
     author: "Captain A.K. Jha",
-    image: "https://randomuser.me/api/portraits/men/76.jpg",
+    image: "/testimonial/Ak-jha.png",
     role: "Director",
     company: "Radiance Classes.",
     videoUrl: '/testimonial/AK-jha.mp4',
   },
   {
     author: "Rajesh Choudhary ",
-    image: "https://randomuser.me/api/portraits/men/75.jpg",
+    image: "/testimonial/reajesh.png",
     role: "Owner",
     company: "Srijan Mithila.",
-    videoUrl: '/testimonial/naval.mp4',
+    videoUrl: '/testimonial/rajesh.mp4',
   },
   {
     author: "Nancy Kriplani",
-    image: "https://randomuser.me/api/portraits/women/1.jpg",
-    role: "Studio 11 Salon",
-    company: "Global Corp.",
+    image: "/testimonial/nancy.png",
+    role: "Owner",
+    company: "Studio 11 Salon.",
     videoUrl: '/testimonial/nancy.mp4',
+  },
+  {
+    author: "CA Naval Kumar Mishra ",
+    image: "/testimonial/naval.png",
+    role: "Chairman ",
+    company: "ICAI , Darbhanga",
+    videoUrl: '/testimonial/naval.mp4',
+  },
+  {
+    author: "Rishav Raj  ",
+    image: "/testimonial/rishav.png",
+    role: "Owner",
+    company: "Raj Rajeshwari Collection.",
+    videoUrl: '/testimonial/rishav.mp4',
   },
 ];
