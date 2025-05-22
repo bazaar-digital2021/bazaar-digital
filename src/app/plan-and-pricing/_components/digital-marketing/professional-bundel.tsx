@@ -11,15 +11,15 @@ const ProfessionalBundleTable = () => (
             <tbody>
                 {/* Instagram rows */}
                 <tr className="bg-white">
-                    <td className="px-4 py-2 font-medium text-black border-b border-gray-200">Post</td>
+                    <td className="px-4 py-2 font-medium text-black border-b border-gray-200">Reels</td>
                     <td className="px-4 py-2 text-center border-b border-gray-200">15/M</td>
-                    <td className="px-4 py-2 font-medium text-black border-b border-gray-200">Post(including reels)</td>
+                    <td className="px-4 py-2 font-medium text-black border-b border-gray-200">Reels</td>
                     <td className="px-4 py-2 text-center border-b border-gray-200">15/M</td>
                 </tr>
                 <tr className="bg-gray-50">
-                    <td className="px-4 py-2 font-medium text-black border-b border-gray-200">Reels</td>
+                    <td className="px-4 py-2 font-medium text-black border-b border-gray-200">Posts</td>
                     <td className="px-4 py-2 text-center border-b border-gray-200">5/M</td>
-                    <td className="px-4 py-2 font-medium text-black border-b border-gray-200">Reels</td>
+                    <td className="px-4 py-2 font-medium text-black border-b border-gray-200">Posts</td>
                     <td className="px-4 py-2 text-center border-b border-gray-200">5/M</td>
                 </tr>
                 <tr className="bg-white">

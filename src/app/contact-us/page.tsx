@@ -256,22 +256,17 @@ export default function ContactUs() {
                 <div className="w-full py-8 md:py-16 text-white flex flex-col items-center justify-center gap-4">
                     <h1 className="text-4xl font-bold text-primary">Checkout Our Social Handles  </h1>
                     <div className="flex items-center gap-4">
-                        <Link href="https://www.facebook.com/bazaardigital" target="_blank">
+                        <Link href="https://www.facebook.com/share/1ZFrXHYR4Q/?mibextid=wwXIfr" target="_blank">
                             <FaFacebook className="text-2xl text-black" />
                         </Link>
-                        <Link href="https://www.instagram.com/bazaardigital" target="_blank">
+                        <Link href="https://www.instagram.com/bazaardigitalofficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
                             <FaInstagram className="text-2xl text-black" />
                         </Link>
                         <Link href="https://www.linkedin.com/company/bazaardigital" target="_blank">
                             <FaLinkedin className="text-2xl text-black" />
                         </Link>
-                        <Link href="https://www.twitter.com/bazaardigital" target="_blank">
-                            <FaXTwitter className="text-2xl text-black" />
-                        </Link>
-                        <Link href="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ" target="_blank">
-                            <FaYoutube className="text-2xl text-black" />
-                        </Link>
-                        <Link href="https://www.tiktok.com/@bazaardigital" target="_blank">
+
+                        <Link href="https://www.threads.com/@bazaardigitalofficial?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
                             <FaThreads className="text-2xl text-black" />
                         </Link>
                     </div>

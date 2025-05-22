@@ -46,8 +46,8 @@ const plans = [
 
 // Instagram features data
 const instagramFeatures = [
-    { label: 'Post', values: ['15/M', '15/M', '18/M', '20/M', '20/M'] },
-    { label: 'Reels', values: ['5/M', '5/M', '5/M', '5/M', '5/M'] },
+    { label: 'Reels', values: ['15/M', '15/M', '18/M', '20/M', '20/M'] },
+    { label: 'Posts', values: ['5/M', '5/M', '5/M', '5/M', '5/M'] },
     { label: 'Stories uploading', values: ['20/M', '20/M', '23/M', '25/M', '25/M'] },
     { label: 'Hashtags Research', values: [true, true, true, true, true] },
     { label: 'Post Creative Designing', values: [true, true, true, true, true] },
@@ -58,8 +58,8 @@ const instagramFeatures = [
 
 // Facebook features data
 const facebookFeatures = [
-    { label: 'Post(including reels)', values: ['15/M', '15/M', '18/M', '20/M', '20/M'] },
-    { label: 'Reels', values: ['5/M', '5/M', '5/M', '5/M', '5/M'] },
+    { label: 'Reels', values: ['15/M', '15/M', '18/M', '20/M', '20/M'] },
+    { label: 'Posts', values: ['5/M', '5/M', '5/M', '5/M', '5/M'] },
     { label: 'Stories uploading', values: ['20/M', '20/M', '23/M', '25/M', '25/M'] },
     { label: 'Post Creative Designing', values: [true, true, true, true, true] },
     { label: 'Facebook Business Manager Set Up', values: [true, true, true, true, true] },
@@ -173,11 +173,11 @@ const professionalBundleHeaders = [
 
 const professionalBundleRows = [
     {
-        label: 'Post',
+        label: 'Reels',
         values: ['15/M', { type: 'header' }, 'Post(including reels)', { type: 'header' }, '15/M'],
     },
     {
-        label: 'Reels',
+        label: 'Posts',
         values: ['5/M', { type: 'header' }, 'Reels', { type: 'header' }, '5/M'],
     },
     {
@@ -256,12 +256,12 @@ const creativeBundleHeaders = [
 
 const creativeBundleRows = [
     {
-        label: 'Post',
-        values: ['15', 'Post', '15', 'UGC', '3'],
+        label: 'Reels',
+        values: ['15', 'Reels', '15', 'UGC', '3'],
     },
     {
-        label: 'Reels',
-        values: ['5', 'Reels', '5', '', ''],
+        label: 'Posts',
+        values: ['5', 'Posts', '5', '', ''],
     },
     {
         label: 'Stories uploading',
@@ -292,9 +292,11 @@ const CreativeBundleTable = () => (
             <thead>
                 <tr>
                     <th className="bg-primary text-white text-xl font-bold text-center px-4 py-3 border-r border-gray-300">Instagram Marketing</th>
-                    <th className="bg-primary text-white text-xl font-bold text-center px-4 py-3 border-r border-gray-300">Facebook Marketing</th>
-                    <th className="bg-primary text-white text-xl font-bold text-center px-4 py-3 border-r border-gray-300">Content Creation</th>
                     <th className="bg-primary text-white text-xl font-bold text-center px-4 py-3">&nbsp;</th>
+                    <th className="bg-primary text-white text-xl font-bold text-center px-4 py-3 border-r border-gray-300">Facebook Marketing</th>
+                    <th className="bg-primary text-white text-xl font-bold text-center px-4 py-3">&nbsp;</th>
+                    <th className="bg-primary text-white text-xl font-bold text-center px-4 py-3">&nbsp;</th>
+                    <th className="bg-primary text-white text-xl font-bold text-center px-4 py-3 border-r border-gray-300">Content Creation</th>
                 </tr>
             </thead>
             <tbody>
