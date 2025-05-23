@@ -81,7 +81,7 @@ export default function Navbar() {
                             className="h-10 w-10 hover:bg-primary/10 transition-colors"
                             aria-label="Toggle Menu"
                         >
-                            <Menu className="h-6 w-6" />
+                            <Menu className="h-8 w-8" />
                         </Button>
                     </SheetTrigger>
                     <SheetContent side="right" className="w-[85%] max-w-sm p-0 border-l shadow-lg">

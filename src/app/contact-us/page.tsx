@@ -54,10 +54,10 @@ export default function ContactUs() {
                     <div className="space-y-8 items-start">
 
                         <div className='grid grid-cols-2 gap-8 mt-4 md:mt-20'>
-                            <div className='relative rounded-2xl overflow-hidden h-[400px] w-[300px]'>
+                            <div className='relative rounded-2xl overflow-hidden h-[260px] w-[180px] md:h-[400px] md:w-[300px]'>
                                 <Image src="/contact-us.webp" alt="About Us" fill className='rounded-2xl' />
                             </div>
-                            <div className='relative rounded-2xl overflow-hidden h-[400px] w-[300px] -mt-10'>
+                            <div className='relative rounded-2xl overflow-hidden h-[260px] w-[180px] md:h-[400px] md:w-[300px] -mt-10'>
                                 <Image src="/helping-client2.webp" alt="About Us" fill className='object-cover' />
                             </div>
                         </div>

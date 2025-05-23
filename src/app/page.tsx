@@ -9,7 +9,7 @@ import OurClients from "@/section/our-clients"
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <Hero />
       <OurServices />
       <Intro />
