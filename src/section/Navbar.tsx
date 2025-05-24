@@ -41,7 +41,7 @@ export default function Navbar() {
                 : "bg-white "
                 }`}
         >
-            <div className="max-w-7xl mx-auto flex h-20 items-center justify-between px-4 lg:px-8">
+            <div className="w-full mx-auto flex h-20 items-center justify-between px-4 lg:px-8">
                 <div className="flex w-full items-center justify-between gap-8">
                     <div className="flex-shrink-0">
                         <Link href="/">
@@ -74,7 +74,7 @@ export default function Navbar() {
 
                 {/* Mobile Navigation */}
                 <Sheet open={open} onOpenChange={setOpen}>
-                    <SheetTrigger asChild className="md:hidden">
+                    <SheetTrigger asChild className="md:hidden ">
                         <Button
                             variant="ghost"
                             size="icon"
@@ -84,7 +84,7 @@ export default function Navbar() {
                             <Menu className="h-8 w-8" />
                         </Button>
                     </SheetTrigger>
-                    <SheetContent side="right" className="w-[85%] max-w-sm p-0 border-l shadow-lg">
+                    <SheetContent side="top" className="w-[85%] max-w-sm  border-l shadow-lg">
                         {/* <Link href="/" className="flex items-cente z-10 pt-4">
                             <div className="relative h-24 md:h-64 w-48 sm:w-64">
                                 <Image src="/vi-logo.png" alt="VAIDEHI INSTITUTE" fill className="object-contain" />

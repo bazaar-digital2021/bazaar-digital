@@ -257,7 +257,7 @@ const professionalVideoPlans: Plan[] = [
     },
 ];
 
-const PlanCard = ({ plan }: { plan: Plan }) => (
+export const PlanCard = ({ plan }: { plan: Plan }) => (
     <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md">
         <h3 className={`text-2xl font-bold mb-3 text-primary`}>{plan.name}</h3>
 

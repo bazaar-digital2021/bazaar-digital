@@ -150,13 +150,29 @@ const renderValue = (value: any) => {
 const FeatureTable = ({ title, features }: { title: string; features: { label: string; values: any[] }[] }) => (
     <div className="mb-8">
         <div className="bg-gray-50 font-bold text-lg px-4 py-2 border-b border-gray-200">{title}</div>
-        <table className="w-full border-collapse">
+        <table className="w-full border-collapse text-sm">
+            <thead className=''>
+                <tr className='font-normal md:hidden'>
+                    <th className="text-gray-500  text-center px-4  border border-gray-300">Features</th>
+                    {plans.map((plan, idx) => (
+                        <th
+                            key={idx}
+                            className={clsx(
+                                'text-gray-500  font-normal text-center px-4  text-sm border border-gray-300'
+                            )}
+                        >
+                            {plan.name}
+                            <span className='block text-sm  text-black'>{plan.price.split('/-')[0]}</span>
+                        </th>
+                    ))}
+                </tr>
+            </thead>
             <tbody>
                 {features.map((feature, idx) => (
-                    <tr key={feature.label} className={clsx(idx % 2 === 0 ? 'bg-white' : 'bg-gray-50')}>
-                        <td className="px-4 py-2 font-medium text-black border-b border-gray-100 w-1/4">{feature.label}</td>
+                    <tr key={feature.label} className={clsx(idx % 2 === 0 ? 'bg-white' : 'bg-gray-100')}>
+                        <td className="px-4 py-2 font-medium text-black border border-gray-200 w-1/4">{feature.label}</td>
                         {feature.values.map((value, i) => (
-                            <td key={i} className="px-4 py-2 text-center border-b border-gray-100">{renderValue(value)}</td>
+                            <td key={i} className="px-4 py-2 text-center border border-gray-200">{renderValue(value)}</td>
                         ))}
                     </tr>
                 ))}
@@ -285,7 +301,7 @@ const creativeBundleRows = [
     },
 ];
 
-const CreativeBundleTable = () => (
+export const CreativeBundleTable = () => (
     <div className="w-full max-w-6xl mx-auto my-16">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">CREATIVE BUNDLE - RS. 19,999/-</h2>
         <table className="w-full border border-gray-300">
@@ -315,18 +331,18 @@ const CreativeBundleTable = () => (
 );
 
 const DigitalMarketingPricing = () => (
-    <div className="w-full max-w-7xl mx-auto px-2 md:px-6 py-12">
+    <div className=" w-full md:max-w-7xl mx-auto px-2 md:px-6 py-12">
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-center md:justify-start mb-8 ">
+        <div className="hidden md:flex md:flex-row md:items-center md:justify-start mb-8 ">
             <div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-0">Features Comparison</h2>
             </div>
-            <div className="flex flex-col md:ml-8 md:flex-row md:gap-16 w-full md:w-auto">
+            <div className=" md:flex md:ml-8 md:flex-row md:gap-16 w-full md:w-auto">
                 {plans.map((plan, idx) => (
                     <div key={plan.name} className="flex flex-col items-center mb-6 md:mb-0 w-full md:w-auto">
                         <span className={clsx('text-xl font-bold mb-1 text-primary',)}>{plan.name}</span>
                         <span className="text-lg font-bold mb-2">{plan.price}</span>
-                        <button className={clsx('text-white font-semibold py-2 px-6 rounded mb-2 bg-secondary pt-3',)}>{plan.btnText}</button>
+                        <button className={clsx('text-white hidden md:block font-semibold py-2 px-6 rounded mb-2 bg-secondary pt-3',)}>{plan.btnText}</button>
                     </div>
                 ))}
             </div>

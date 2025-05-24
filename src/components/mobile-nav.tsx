@@ -13,7 +13,7 @@ interface MobileNavProps {
 
 export function MobileNav({ items, setOpen }: MobileNavProps) {
     return (
-        <div className="flex flex-col py-2 h-[calc(100vh-80px)] overflow-y-auto bg-white">
+        <div className="flex flex-col pt-8 h-[calc(100vh-80px)] overflow-y-auto bg-white">
             <nav className="px-6">
                 {items.map((item, index) => (
                     <MobileNavItem

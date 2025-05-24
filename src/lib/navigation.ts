@@ -167,9 +167,13 @@ export const navigation: Navigation = [
                 href: '/plan-and-pricing/digital-media-marketing-plan-and-pricing'
             },
             {
-                title: 'Web Services Plan & Pricing',
-                href: '/plan-and-pricing/web-services-plan-and-pricing'
+                title: 'Hot Selling Package',
+                href: '/plan-and-pricing/hot-selling-package'
             }
+            // {
+            //     title: 'Web Services Plan & Pricing',
+            //     href: '/plan-and-pricing/web-services-plan-and-pricing'
+            // }
 
         ]
     },

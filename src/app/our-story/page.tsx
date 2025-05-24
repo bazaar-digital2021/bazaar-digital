@@ -86,7 +86,7 @@ export default function OurStory() {
                         <div className=" inline-block rounded-lg ">
                             <span className="text-primary/15 text-4xl  md:text-7xl font-bold block">2021</span>
                         </div>
-                        <h2 className="text-3xl font-bold -mt-8 mb-4 text-primary">The Beginning - Inception of Dreams</h2>
+                        <h2 className="text-3xl font-bold -mt-4 md:-mt-8 mb-4 text-primary">The Beginning - Inception of Dreams</h2>
                         <p className="text-gray-700 mb-4">
                             Welcome to the heart of Bazaar Digital , where our journey from a humble beginning to a thriving digital media agency unfolds. It all began in 2021 when our visionaries, Gagan ( Founder & CEO of Bazaar Digital ) , dared to embark on a digital odyssey at a time when the digital landscape was an uncharted territory.
                         </p>
@@ -130,7 +130,7 @@ export default function OurStory() {
                         <div className=" inline-block rounded-lg ">
                             <span className="text-primary/15 text-3xl md:text-7xl font-bold block">2021 - 2023</span>
                         </div>
-                        <h2 className="text-3xl font-bold mb-4 -mt-8 text-primary">A Modest Beginning</h2>
+                        <h2 className="text-3xl font-bold mb-4 -mt-4 md:-mt-8 text-primary">A Modest Beginning</h2>
                         <p className="text-gray-700 mb-4">
                             We started our Journey from a small cafe with a purpose to connect brands with their target audience on social media. It was was in this unconventional settings that the seeds of creativity were sown. In the face of challenges, our determination to succeed blossomed
                         </p>
@@ -154,7 +154,7 @@ export default function OurStory() {
                     className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center"
                 >
                     <motion.div variants={slideIn} className="order-2 md:order-1">
-                        <h2 className="text-3xl font-bold mb-4 -mt-8 text-primary">Geographical Location </h2>
+                        <h2 className="text-3xl font-bold mb-4 -mt-4 md:-mt-8 text-primary">Geographical Location </h2>
 
                         <p className="text-gray-700 mb-4">
                             From a small cafe , we've transcended boundaries to establish our presence in two key locations- Darbhanga and Patna. Each office is not just a workspace but a hub of creativity and collaboration, echoing the growth and success of Bazaar Digital.
