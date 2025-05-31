@@ -68,7 +68,7 @@ const Testimonial = () => {
                 >
                     <CarouselContent>
                         {testimonial.map((testimonial, index) => (
-                            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                            <CarouselItem key={index} className="md:basis-1 lg:basis-1/3">
                                 <div className="p-1">
                                     <Card key={index} className="bg-background border-none shadow-md">
                                         <CardContent className="pt-6 ">
@@ -92,7 +92,7 @@ const Testimonial = () => {
                                                         </p>
                                                     </div>
                                                 </div>
-                                                <video width="320" height="240" controls preload="auto">
+                                                <video width="620" height="240" controls preload="auto">
                                                     <source src={testimonial.videoUrl} type="video/mp4" />
                                                     Your browser does not support the video tag.
                                                 </video>

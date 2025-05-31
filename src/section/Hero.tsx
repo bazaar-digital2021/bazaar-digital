@@ -23,7 +23,7 @@ export default function Hero() {
             {/* Background SVG Pattern */}
 
             <div className="max-w-[1400px] mx-auto relative z-10">
-                <div className="flex flex-col items-start lg:flex-row md:items-center justify-between md:gap-8">
+                <div className="flex flex-col items-center lg:flex-row md:items-center justify-between md:gap-8">
                     {/* Left Section */}
                     <div className="absolute inset-0 z-0 pointer-events-none overflow-visible">
                         <Image
