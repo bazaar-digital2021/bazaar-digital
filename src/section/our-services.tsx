@@ -76,7 +76,7 @@ export default function OurServices() {
                     </Link>
 
                     {/* Content Marketing Service */}
-                    <div className="border-t border-white/30 pt-6">
+                    <Link href="/services/digital-marketing#content-marketing" className="border-t border-white/30 pt-6">
                         <div className="flex justify-between items-start mb-6">
                             <h3 className="text-2xl md:text-3xl font-[700]">Content Marketing</h3>
                             <div className="bg-white/20 rounded-full p-2 hover:bg-white/30 transition-colors">
@@ -93,7 +93,7 @@ export default function OurServices() {
                             for your business with engaging blogs, videos, infographics, and other
                             high-quality content that converts.
                         </p>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </section>

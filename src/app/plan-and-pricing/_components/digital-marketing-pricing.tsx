@@ -149,7 +149,7 @@ const renderValue = (value: any) => {
 
 const FeatureTable = ({ title, features }: { title: string; features: { label: string; values: any[] }[] }) => (
     <div className="mb-8">
-        <div className="bg-gray-50 font-bold text-lg px-4 py-2 border-b border-gray-200">{title}</div>
+        <div className="bg-gray-50 font-bold text-lg text-primary px-4 py-2 border-b border-gray-200">{title}</div>
         <table className="w-full border-collapse text-sm">
             <thead className=''>
                 <tr className='font-normal md:hidden'>
@@ -158,7 +158,7 @@ const FeatureTable = ({ title, features }: { title: string; features: { label: s
                         <th
                             key={idx}
                             className={clsx(
-                                'text-gray-500  font-normal text-center px-4  text-sm border border-gray-300'
+                                'text-primary  font-normal text-center px-4  text-sm border border-gray-300'
                             )}
                         >
                             {plan.name}
