@@ -335,14 +335,28 @@ const DigitalMarketingPricing = () => (
         {/* Header */}
         <div className="hidden md:flex md:flex-row md:items-center md:justify-start mb-8 ">
             <div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-0">Features Comparison</h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-0 md:w-max">Features <br className='lg:hidden' /> Comparison</h2>
             </div>
-            <div className=" md:flex md:ml-8 md:flex-row md:gap-16 w-full md:w-auto">
+            <div className=" md:flex ml-0 lg:ml-8 md:flex-row md:gap-8 lg:gap-[72px] w-full md:w-auto">
                 {plans.map((plan, idx) => (
                     <div key={plan.name} className="flex flex-col items-center mb-6 md:mb-0 w-full md:w-auto">
                         <span className={clsx('text-xl font-bold mb-1 text-primary',)}>{plan.name}</span>
                         <span className="text-lg font-bold mb-2">{plan.price}</span>
-                        <button className={clsx('text-white hidden md:block font-semibold py-2 px-6 rounded mb-2 bg-secondary pt-3',)}>{plan.btnText}</button>
+                        <a
+                            href={`https://wa.me/918210546110?text=${encodeURIComponent(
+                                `Hello Sir/Mam,
+Thank you for choosing our ${plan.name} services. We’re delighted to welcome you!
+
+Your interest in our services pricing and planning is greatly appreciated. We're confident it will provide excellent value and meet your needs effectively.
+
+If you have any questions or require assistance at any point, feel free to reach out here. We're always ready to support you.
+
+Looking forward to a successful collaboration!.`
+                            )}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={clsx('text-white hidden md:block font-semibold py-2 px-6 rounded mb-2 bg-secondary pt-3',)}>{plan.btnText}
+                        </a>
                     </div>
                 ))}
             </div>

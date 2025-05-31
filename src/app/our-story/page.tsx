@@ -423,7 +423,7 @@ export default function OurStory() {
                         variants={scaleUp}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        href="/contact"
+                        href="/contact-us"
                         className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-primary pt-4"
                     >
                         Contact Us
@@ -432,7 +432,7 @@ export default function OurStory() {
                         variants={scaleUp}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        href="/career"
+                        href="/careers"
                         className="inline-flex items-center justify-center px-6 py-3 border border-primary text-base font-medium rounded-full text-primary bg-white hover:bg-blue-50 pt-4"
                     >
                         Join Our Team

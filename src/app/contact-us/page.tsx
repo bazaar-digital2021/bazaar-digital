@@ -53,12 +53,12 @@ export default function ContactUs() {
                     {/* Left Column - Images and Text */}
                     <div className="space-y-8 items-start">
 
-                        <div className='grid grid-cols-2 gap-8 mt-4 md:mt-20'>
-                            <div className='relative rounded-2xl overflow-hidden h-[260px] w-[180px] md:h-[400px] md:w-[300px]'>
-                                <Image src="/contact-us.webp" alt="About Us" fill className='rounded-2xl' />
+                        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 mt-4 md:mt-20'>
+                            <div className='relative rounded-2xl overflow-hidden   '>
+                                <Image src="/contact-us.webp" alt="About Us" height={600} width={1000} className='rounded-2xl' />
                             </div>
-                            <div className='relative rounded-2xl overflow-hidden h-[260px] w-[180px] md:h-[400px] md:w-[300px] -mt-10'>
-                                <Image src="/helping-client2.webp" alt="About Us" fill className='object-cover' />
+                            <div className='relative rounded-2xl overflow-hidden    lg:-mt-10'>
+                                <Image src="/helping-client2.webp" alt="About Us" height={600} width={1000} className='object-cover rounded-2xl' />
                             </div>
                         </div>
 

@@ -23,7 +23,7 @@ export default function Hero() {
             {/* Background SVG Pattern */}
 
             <div className="max-w-[1400px] mx-auto relative z-10">
-                <div className="flex flex-col items-start md:flex-row md:items-center justify-between md:gap-8">
+                <div className="flex flex-col items-start lg:flex-row md:items-center justify-between md:gap-8">
                     {/* Left Section */}
                     <div className="absolute inset-0 z-0 pointer-events-none overflow-visible">
                         <Image
@@ -149,7 +149,7 @@ export default function Hero() {
                                         src='/founder1.webp'
                                         fill
                                         alt='human'
-                                        className='object-contain md:object-cover absolute z-5 drop-shadow-[15px_15px_15px_rgba(0,0,0,0.45)]'
+                                        className='object-contain lg:object-cover absolute z-5 drop-shadow-[15px_15px_15px_rgba(0,0,0,0.45)]'
                                         sizes="(max-width: 768px) 350px, (max-width: 1024px) 450px, 500px"
                                         priority
                                     />

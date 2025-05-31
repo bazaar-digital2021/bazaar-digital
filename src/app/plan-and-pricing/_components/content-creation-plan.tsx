@@ -258,17 +258,28 @@ const professionalVideoPlans: Plan[] = [
 ];
 
 export const PlanCard = ({ plan }: { plan: Plan }) => (
-    <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md">
+    <div className="flex flex-col items-center bg-white p-6 gap-2 rounded-lg shadow-md">
         <h3 className={`text-2xl font-bold mb-3 text-primary`}>{plan.name}</h3>
 
         <p className="text-3xl font-bold mb-6">{plan.price}</p>
 
-        <Link
-            href={`/checkout/${plan.id}`}
-            className={`bg-secondary text-white py-3 px-8 rounded-md text-lg font-semibold mb-6 transition-colors duration-300`}
+        <a
+            href={`https://wa.me/918210546110?text=${encodeURIComponent(
+                `Hello Sir/Mam,
+Thank you for choosing our ${plan.id} services. We’re delighted to welcome you!
+
+Your interest in our services pricing and planning is greatly appreciated. We're confident it will provide excellent value and meet your needs effectively.
+
+If you have any questions or require assistance at any point, feel free to reach out here. We're always ready to support you.
+
+Looking forward to a successful collaboration!.`
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-secondary text-white py-3 px-12 rounded-md text-lg font-semibold transition-colors duration-300 inline-block"
         >
             Buy Now
-        </Link>
+        </a>
 
         <div className="border border-gray-200 w-full py-3 text-center rounded">
             {plan.atLocation ? (
@@ -288,12 +299,23 @@ const ProductShootCard = ({ plan }: { plan: ProductShootPlan }) => (
             <h3 className="text-2xl font-bold text-amber-600 mb-3">{plan.planName}</h3>
             <p className="text-3xl font-bold mb-6">{plan.price}</p>
 
-            <Link
-                href={`/checkout/${plan.id}`}
-                className={`bg-secondary text-white py-3 px-12 rounded-md text-lg font-semibold transition-colors duration-300 inline-block`}
+            <a
+                href={`https://wa.me/918210546110?text=${encodeURIComponent(
+                    `Hello Sir/Mam,
+Thank you for choosing our ${plan.id} services. We’re delighted to welcome you!
+
+Your interest in our services pricing and planning is greatly appreciated. We're confident it will provide excellent value and meet your needs effectively.
+
+If you have any questions or require assistance at any point, feel free to reach out here. We're always ready to support you.
+
+Looking forward to a successful collaboration!.`
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-secondary text-white py-3 px-12 rounded-md text-lg font-semibold transition-colors duration-300 inline-block"
             >
                 Buy Now
-            </Link>
+            </a>
         </div>
 
         <div className="border border-gray-200 w-full py-4 text-center rounded">
@@ -307,12 +329,23 @@ const OutdoorPlanCard = ({ plan }: { plan: Plan }) => (
     <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md">
         <h3 className={`text-2xl font-bold mb-3 text-primary`}>{plan.name}</h3>
         <p className="text-3xl font-bold mb-6">{plan.price}</p>
-        <Link
-            href={`/checkout/${plan.id}`}
-            className={`bg-secondary text-white py-3 px-8 rounded-md text-lg font-semibold mb-6 transition-colors duration-300`}
+        <a
+            href={`https://wa.me/918210546110?text=${encodeURIComponent(
+                `Hello Sir/Mam,
+Thank you for choosing our ${plan.id} services. We’re delighted to welcome you!
+
+Your interest in our services pricing and planning is greatly appreciated. We're confident it will provide excellent value and meet your needs effectively.
+
+If you have any questions or require assistance at any point, feel free to reach out here. We're always ready to support you.
+
+Looking forward to a successful collaboration!.`
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-secondary text-white py-3 px-12 rounded-md text-lg font-semibold transition-colors duration-300 inline-block"
         >
             Buy Now
-        </Link>
+        </a>
         <div className="border border-gray-200 w-full py-3 text-center rounded">
             <p className="text-lg font-medium">{plan.description}</p>
         </div>

@@ -12,7 +12,7 @@ export default function Career() {
     return (
         <main className="flex-1 overflow-x-hidden">
             <section className="w-full py-4 md:py-8 lg:py-12 ">
-                <div className="container px-4 md:px-6">
+                <div className=" px-4 md:px-6">
                     <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
 
                         <div className="flex flex-col justify-center space-y-4">
@@ -21,8 +21,8 @@ export default function Career() {
                                     Looking to be a part of an industry that’s constantly evolving and shaping the future?
                                 </p>
                                 <h1 className="max-w-[600px] font-bold text-[#6C6C6C] text-3xl md:text-5xl lg:text-7xl">
-                                    We are <br />
-                                    <span className="text-primary">HIRING</span>
+                                    We are <br className="hidden lg:block" />
+                                    <span className="text-primary"> HIRING  </span>
                                     creative
                                     & awesome people
                                 </h1>
@@ -32,13 +32,13 @@ export default function Career() {
                             </div>
                         </div>
 
-                        <div className="relative hidden lg:block">
-                            <div className='grid grid-cols-2 gap-2 mt-4 md:mt-20'>
-                                <div className='relative rounded-2xl overflow-hidden '>
-                                    <Image src="/career/creative.png" alt="About Us" height={500} width={500} className='rounded-2xl' />
+                        <div className="relative lg:block">
+                            <div className='grid grid-cols-1 md:grid-cols-2 gap-2 mt-4 md:mt-20'>
+                                <div className='relative rounded-2xl overflow-hidden  '>
+                                    <Image src="/career/creative.png" alt="About Us" height={1000} width={1000} className='rounded-2xl' />
                                 </div>
-                                <div className='relative rounded-2xl overflow-hidden -mt-10'>
-                                    <Image src="/helping-client2.webp" alt="About Us" height={500} width={500} className='object-cover' />
+                                <div className='relative rounded-2xl overflow-hidden lg:-mt-10 '>
+                                    <Image src="/helping-client2.webp" alt="About Us" height={1000} width={1000} className='object-cover rounded-2xl' />
                                 </div>
                             </div>
                         </div>
@@ -47,7 +47,7 @@ export default function Career() {
             </section>
 
             <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
-                <div className="container px-4 md:px-6">
+                <div className=" px-4 md:px-6">
                     <div className="flex flex-col items-center justify-center space-y-4 text-center">
                         <div className="space-y-2">
                             <div className="inline-flex text-white items-center rounded-lg bg-muted px-3 py-1 text-sm font-medium">
@@ -96,7 +96,7 @@ export default function Career() {
             </section>
 
             <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
-                <div className="container px-4 md:px-6">
+                <div className=" px-4 md:px-6">
                     <div className="flex flex-col items-center justify-center space-y-4 text-center">
                         <div className="space-y-2">
                             <div className="inline-flex items-center rounded-lg bg-background px-3 py-1 text-sm font-medium">
@@ -174,10 +174,10 @@ export default function Career() {
             </section>
 
             <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
-                <div className="container px-4 md:px-6">
+                <div className=" px-4 md:px-6">
                     <div className="flex flex-col items-center justify-center space-y-4 text-center">
                         <div className="space-y-2">
-                            <div className="inline-flex items-center rounded-lg bg-muted px-3 py-1 text-sm font-medium">
+                            <div className="inline-flex items-center text-white rounded-lg bg-muted px-3 py-1 text-sm font-medium">
                                 Testimonials
                             </div>
                             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Hear From Our Team</h2>
@@ -210,7 +210,7 @@ export default function Career() {
             </section>
 
             <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-muted to-background">
-                <div className="container px-4 md:px-6">
+                <div className=" px-4 md:px-6">
                     <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
                         <div className="flex flex-col justify-center space-y-4">
                             <div className="space-y-2">
